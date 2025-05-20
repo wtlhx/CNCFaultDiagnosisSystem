@@ -5,7 +5,7 @@
 #include <muduo/base/Timestamp.h>
 class HttpRequest
 {
-private:
+public:
     enum class Method
     {
         GET, // 请求资源
@@ -17,6 +17,7 @@ private:
         OPTIONS,
     }; 
 
+private:
     Method method; // 请求方法
     std::string url; // 请求的资源
     std::string version; // Http版本
@@ -57,6 +58,8 @@ public:
 
     void setReceiveTime(muduo::Timestamp receiveTime_) {receiveTime = receiveTime_;} // 设置接受时间
     muduo::Timestamp getReceiveTime() const { return receiveTime; } // 获取接受时间
+
+    void reset(); // 重置请求体
 };
 
 

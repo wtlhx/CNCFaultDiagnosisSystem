@@ -127,3 +127,15 @@ void HttpRequest::setContentBody(const char* start, const char* end)
     }
 }
 
+
+void HttpRequest::reset()
+{
+    method = Method::Valid;
+    url = "Unknown";
+    version = "Unknown";
+    pathParameters.clear();
+    queryParameters.clear();
+    headers.clear();
+    contentBody.clear();
+    contentLength = 0;
+}
