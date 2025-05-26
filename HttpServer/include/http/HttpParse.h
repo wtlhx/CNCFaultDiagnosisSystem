@@ -1,4 +1,4 @@
-//解析Http请求
+//解析Http请求，把muduo::net::Buffer中的数据解析成HttpRequest对象
 #pragma once
 
 #include <string>
@@ -33,7 +33,7 @@ public:
 
     void reset(); // 重置解析状态
 
-    const HttpRequest& getRequest() const //常量引用，避免引用和外部修改
+    const HttpRequest& getRequest() const //返回常量引用，避免拷贝和外部修改
     {
         return request; // 获取Http请求对象
     }

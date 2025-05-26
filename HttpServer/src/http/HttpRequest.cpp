@@ -40,6 +40,29 @@ bool HttpRequest::setMethod(const char* start, const char* end)
     return method != Method::Valid;
 }
 
+std::string HttpRequest::getMethodString() const
+{
+    switch (method)
+    {
+    case Method::GET :
+        return "GET";
+    case Method::POST :
+        return "POST";
+    case Method::Valid :
+        return "Valid";
+    case Method::PUT :
+        return "PUT";
+    case Method::DELETE :
+        return "DELETE";
+    case Method::HEAD :
+        return "HEAD";
+    case Method::OPTIONS :
+        return "OPTIONS";     
+    default:
+        return "Method Error";
+    }
+}
+
 void HttpRequest::setUrl(const char* start, const char* end)
 {
     url.assign(start, end); //assign的迭代器用法，范围是[start, end)

@@ -47,7 +47,8 @@ public:
     void setBody(const std::string& body_) { body = body_; } // 设置响应体
 
     void setKeepAlive(bool keepAlive_) { keepAlive = keepAlive_; } // 设置是否保持连接
-
+    bool getKeepAlive() {return keepAlive;};
+    
     void appendToBuffer(muduo::net::Buffer* output) const; // 将响应内容添加到缓冲区
 
     void setResponseLine(const std::string& version, HttpStatusCode statusCode, const std::string& statusMessage); // 设置响应行

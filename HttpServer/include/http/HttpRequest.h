@@ -33,7 +33,8 @@ public:
     ~HttpRequest();
     bool setMethod(const char* start, const char* end); // 设置请求方法, [start, end)是指向字符串的指针，表示请求方法的起始和结束位置
     Method getMethod() const { return method; } // 获取请求方法 简单函数直接在头文件中实现（内联）
-
+    std::string getMethodString() const; // 获取请求方法字符串
+    
     void setUrl(const char* start, const char* end); // 设置请求资源
     std::string getUrl() const { return url; } // 获取请求资源
 
