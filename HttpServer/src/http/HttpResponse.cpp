@@ -1,4 +1,4 @@
-#include "include/http/HttpResponse.h"
+#include "HttpResponse.h"
 
 HttpResponse::HttpResponse() : statusCode(HttpStatusCode::UnKnown), keepAlive(false)
 {

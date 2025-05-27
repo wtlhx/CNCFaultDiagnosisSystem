@@ -1,9 +1,10 @@
-#include "include/http/HttpServer.h"
-#include "include/http/HttpParse.h"
-#include "include/http/HttpResponse.h"
+#include "HttpServer.h"
+#include "HttpParse.h"
+#include "HttpResponse.h"
 #include <muduo/base/Logging.h>
+#include <iostream>
 
-HttpServer::HttpServer(int port_, const std::string &name, muduo::net::TcpServer::Option option = muduo::net::TcpServer::kNoReusePort) :
+HttpServer::HttpServer(int port_, const std::string &name, muduo::net::TcpServer::Option option) :
 serverAddress(port_), server(&loop, serverAddress, name, option), 
 handleCallback(std::bind(&HttpServer::handleRequest, this, std::placeholders::_1, std::placeholders::_2))
 {
@@ -47,6 +48,7 @@ void HttpServer::onConnect(const muduo::net::TcpConnectionPtr &conneciton)
 
 void HttpServer::onMessage(const muduo::net::TcpConnectionPtr &conneciton, muduo::net::Buffer* buf, muduo::Timestamp receiveTime)
 {
+    std::cout << "handle message" << std::endl;
     try
     {
         HttpParse* parser = boost::any_cast<HttpParse>(conneciton->getMutableContext()); // 获取解析器
@@ -56,9 +58,10 @@ void HttpServer::onMessage(const muduo::net::TcpConnectionPtr &conneciton, muduo
             conneciton->send("HTTP/1.1 400 Bad Request\r\n\r\n");
             conneciton->shutdown();
         }
-        
+        std::cout << (int)parser->status << std::endl;
         if(parser->whetherComplete())
         {
+            std::cout << "Parse success" << std::endl;
             onResponse(conneciton, parser->getRequest());
             parser->reset();//重置解析器里的HttpRequst，用于下一次请求的读取
         }

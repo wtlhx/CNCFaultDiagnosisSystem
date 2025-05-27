@@ -6,7 +6,7 @@
 #include <muduo/net/TcpServer.h>
 #include <muduo/net/InetAddress.h>
 #include "HttpRequest.h"
-#include "router/Router.h"
+#include "Router.h"
 
 class HttpResponse;
 class Router;
@@ -21,7 +21,7 @@ private:
     Router router; //路由器
     HttpHandleCallback handleCallback; //业务处理回调
 public:
-    HttpServer(int port_, const std::string &name, muduo::net::TcpServer::Option option);
+    HttpServer(int port_, const std::string &name, muduo::net::TcpServer::Option option = muduo::net::TcpServer::kNoReusePort);
     ~HttpServer();
 
     void initiate(); //初始化，设置回调

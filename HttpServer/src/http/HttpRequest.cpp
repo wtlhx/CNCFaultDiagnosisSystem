@@ -1,4 +1,4 @@
-#include "include/http/HttpRequest.h"
+#include "HttpRequest.h"
 
 HttpRequest::HttpRequest() : method(Method::Valid), url("Unknown"),version("Unknown"), contentLength(0)
 {

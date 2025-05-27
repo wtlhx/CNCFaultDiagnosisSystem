@@ -1,11 +1,11 @@
-#pragma once;
+#pragma once
 
 #include <string>
 #include <unordered_map>
 #include <memory>
 #include <functional>
 #include <RouterHandler.h>
-#include "http/HttpRequest.h"
+#include "HttpRequest.h"
 
 class Router
 {
@@ -27,7 +27,7 @@ public:
     //为路由键定义哈希函数，函数对象
     struct RouteKeyHash
     {
-        size_t operator()(const RouteKey key)
+        size_t operator()(const RouteKey &key) const
         {
             size_t methodHash = std::hash<int>{}(static_cast<int>(key.method)); // 将枚举转换为int
             size_t pathHash = std::hash<std::string>{}(key.path); // 计算路径的哈希值

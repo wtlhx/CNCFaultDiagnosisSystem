@@ -2,10 +2,12 @@
 #pragma once
 
 #include <string>
+#include <iostream>
 #include <memory>
 #include <muduo/net/Buffer.h>
 #include <muduo/base/Timestamp.h>
-class HttpRequest;
+#include "HttpRequest.h"
+
 class HttpParse
 {
 public:
@@ -16,7 +18,7 @@ public:
         ParseResquestBody, // 解析请求体
         ParseComplete, // 解析完成
     };
-private:
+public:
     HttpParseStatus status; // 解析状态
     HttpRequest request; // Http请求对象
 public:

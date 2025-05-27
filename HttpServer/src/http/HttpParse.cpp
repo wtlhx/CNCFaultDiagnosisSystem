@@ -1,5 +1,4 @@
-#include "include/http/HttpParse.h"
-#include "include/http/HttpRequest.h"
+#include "HttpParse.h"
 HttpParse::HttpParse(/* args */) : status(HttpParseStatus::ParseResquestLine)
 {
 }
@@ -40,9 +39,11 @@ bool HttpParse::parse(muduo::net::Buffer* buf, muduo::Timestamp receiveTime)
         }
         else if(status == HttpParseStatus::ParseResquestHeaders)
         {
+            std::cout << "Parse header" << std::endl;
             const char* crlf = buf->findCRLF();
             if(crlf)
             {
+                std::cout << "header.." << std::endl;
                 const char* colon = std::find(buf->peek(), crlf, ':'); //找冒号的位置
                 if(colon < crlf)
                 {
@@ -88,6 +89,7 @@ bool HttpParse::parse(muduo::net::Buffer* buf, muduo::Timestamp receiveTime)
             }
             else
             {
+                std::cout << "Not found CRLF" << std::endl;
                 finished = true; //后面没有内容了
             }
         }

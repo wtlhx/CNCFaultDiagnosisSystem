@@ -1,6 +1,6 @@
-#pragma once;
+#pragma once
 
-class HttpRequset;
+#include "HttpRequest.h"
 class HttpResponse;
 
 // 抽象基类，定义路由处理器的接口
