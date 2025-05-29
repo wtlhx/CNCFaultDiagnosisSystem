@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/Database/MySQLConnection.cpp" "src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnection.cpp.o" "gcc" "src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnection.cpp.o.d"
+  "/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/Database/MySQLConnectionPool.cpp" "src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnectionPool.cpp.o" "gcc" "src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnectionPool.cpp.o.d"
   "/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/http/HttpParse.cpp" "src/CMakeFiles/HttpServer_shared.dir/http/HttpParse.cpp.o" "gcc" "src/CMakeFiles/HttpServer_shared.dir/http/HttpParse.cpp.o.d"
   "/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/http/HttpRequest.cpp" "src/CMakeFiles/HttpServer_shared.dir/http/HttpRequest.cpp.o" "gcc" "src/CMakeFiles/HttpServer_shared.dir/http/HttpRequest.cpp.o.d"
   "/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/http/HttpResponse.cpp" "src/CMakeFiles/HttpServer_shared.dir/http/HttpResponse.cpp.o" "gcc" "src/CMakeFiles/HttpServer_shared.dir/http/HttpResponse.cpp.o.d"

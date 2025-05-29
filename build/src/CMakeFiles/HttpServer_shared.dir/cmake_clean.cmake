@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/HttpServer_shared.dir/Database/MySQLConnection.cpp.o"
+  "CMakeFiles/HttpServer_shared.dir/Database/MySQLConnection.cpp.o.d"
+  "CMakeFiles/HttpServer_shared.dir/Database/MySQLConnectionPool.cpp.o"
+  "CMakeFiles/HttpServer_shared.dir/Database/MySQLConnectionPool.cpp.o.d"
   "CMakeFiles/HttpServer_shared.dir/http/HttpParse.cpp.o"
   "CMakeFiles/HttpServer_shared.dir/http/HttpParse.cpp.o.d"
   "CMakeFiles/HttpServer_shared.dir/http/HttpRequest.cpp.o"

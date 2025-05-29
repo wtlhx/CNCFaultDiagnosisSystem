@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/include/http -I/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/include/router
+CXX_INCLUDES = -I/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/include/http -I/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/include/router -I/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/include/Database
 
 CXX_FLAGS = -g -std=gnu++17
 

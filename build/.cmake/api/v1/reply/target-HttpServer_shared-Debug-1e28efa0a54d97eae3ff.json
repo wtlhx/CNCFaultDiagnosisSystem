@@ -43,6 +43,12 @@
 				"file" : 1,
 				"line" : 8,
 				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 9,
+				"parent" : 2
 			}
 		]
 	},
@@ -73,6 +79,10 @@
 				{
 					"backtrace" : 4,
 					"path" : "/home/luohuaxu/\u6545\u969c\u8bca\u65ad\u7cfb\u7edf/CNCFaultDiagnosisSystem/HttpServer/include/router"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/luohuaxu/\u6545\u969c\u8bca\u65ad\u7cfb\u7edf/CNCFaultDiagnosisSystem/HttpServer/include/Database"
 				}
 			],
 			"language" : "CXX",
@@ -90,7 +100,9 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5,
+				6
 			]
 		}
 	],
@@ -123,12 +135,26 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5,
+				6
 			]
 		}
 	],
 	"sources" : 
 	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Database/MySQLConnection.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Database/MySQLConnectionPool.cpp",
+			"sourceGroupIndex" : 0
+		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,

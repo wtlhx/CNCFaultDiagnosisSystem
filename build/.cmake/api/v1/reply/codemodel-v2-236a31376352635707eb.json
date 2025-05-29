@@ -75,21 +75,21 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "HttpServer_shared::@145eef247bfb46b6828c",
-					"jsonFile" : "target-HttpServer_shared-Debug-34517ae3c79a542a336f.json",
+					"jsonFile" : "target-HttpServer_shared-Debug-1e28efa0a54d97eae3ff.json",
 					"name" : "HttpServer_shared",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "testClient::@a44f0ac069e85531cdee",
-					"jsonFile" : "target-testClient-Debug-8f02664de08fbcc75661.json",
+					"jsonFile" : "target-testClient-Debug-86e16e47cb905e7f929a.json",
 					"name" : "testClient",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "testServer::@a44f0ac069e85531cdee",
-					"jsonFile" : "target-testServer-Debug-4e9454f192a11cfc2ba9.json",
+					"jsonFile" : "target-testServer-Debug-fc2f614d95130ef8962b.json",
 					"name" : "testServer",
 					"projectIndex" : 0
 				}
