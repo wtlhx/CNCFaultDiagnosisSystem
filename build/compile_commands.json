@@ -11,6 +11,11 @@
 },
 {
   "directory": "/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/src",
+  "command": "/usr/bin/c++ -DHttpServer_shared_EXPORTS -I/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/include/http -I/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/include/router -I/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/include/Database -g -fPIC -std=gnu++17 -o CMakeFiles/HttpServer_shared.dir/Database/Neo4jUtil.cpp.o -c /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/Database/Neo4jUtil.cpp",
+  "file": "/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/Database/Neo4jUtil.cpp"
+},
+{
+  "directory": "/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/src",
   "command": "/usr/bin/c++ -DHttpServer_shared_EXPORTS -I/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/include/http -I/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/include/router -I/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/include/Database -g -fPIC -std=gnu++17 -o CMakeFiles/HttpServer_shared.dir/http/HttpParse.cpp.o -c /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/http/HttpParse.cpp",
   "file": "/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/http/HttpParse.cpp"
 },
