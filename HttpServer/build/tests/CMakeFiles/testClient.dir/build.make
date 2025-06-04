@@ -93,6 +93,10 @@ testClient_EXTERNAL_OBJECTS =
 bin/testClient: tests/CMakeFiles/testClient.dir/testClient.cpp.o
 bin/testClient: tests/CMakeFiles/testClient.dir/build.make
 bin/testClient: src/libHttpServer_shared.so
+bin/testClient: /usr/lib/x86_64-linux-gnu/libjsoncpp.so.1.9.5
+bin/testClient: tests/libneo4jDriver_static.a
+bin/testClient: /usr/lib/x86_64-linux-gnu/libmysqlcppconn.so
+bin/testClient: /usr/lib/x86_64-linux-gnu/libcurl.so
 bin/testClient: tests/CMakeFiles/testClient.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/testClient"
 	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testClient.dir/link.txt --verbose=$(VERBOSE)

@@ -117,6 +117,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+tests/CMakeFiles/neo4jDriver_static.dir/rule:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/neo4jDriver_static.dir/rule
+.PHONY : tests/CMakeFiles/neo4jDriver_static.dir/rule
+
+# Convenience name for target.
+neo4jDriver_static: tests/CMakeFiles/neo4jDriver_static.dir/rule
+.PHONY : neo4jDriver_static
+
+# fast build rule for target.
+neo4jDriver_static/fast:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/neo4jDriver_static.dir/build.make tests/CMakeFiles/neo4jDriver_static.dir/build
+.PHONY : neo4jDriver_static/fast
+
+# Convenience name for target.
 tests/CMakeFiles/testClient.dir/rule:
 	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/testClient.dir/rule
 .PHONY : tests/CMakeFiles/testClient.dir/rule
@@ -192,6 +206,78 @@ testServer.cpp.s:
 	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testServer.dir/build.make tests/CMakeFiles/testServer.dir/testServer.cpp.s
 .PHONY : testServer.cpp.s
 
+usr/include/Neo4j-cpp-driver-master/api.o: usr/include/Neo4j-cpp-driver-master/api.cpp.o
+.PHONY : usr/include/Neo4j-cpp-driver-master/api.o
+
+# target to build an object file
+usr/include/Neo4j-cpp-driver-master/api.cpp.o:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/neo4jDriver_static.dir/build.make tests/CMakeFiles/neo4jDriver_static.dir/usr/include/Neo4j-cpp-driver-master/api.cpp.o
+.PHONY : usr/include/Neo4j-cpp-driver-master/api.cpp.o
+
+usr/include/Neo4j-cpp-driver-master/api.i: usr/include/Neo4j-cpp-driver-master/api.cpp.i
+.PHONY : usr/include/Neo4j-cpp-driver-master/api.i
+
+# target to preprocess a source file
+usr/include/Neo4j-cpp-driver-master/api.cpp.i:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/neo4jDriver_static.dir/build.make tests/CMakeFiles/neo4jDriver_static.dir/usr/include/Neo4j-cpp-driver-master/api.cpp.i
+.PHONY : usr/include/Neo4j-cpp-driver-master/api.cpp.i
+
+usr/include/Neo4j-cpp-driver-master/api.s: usr/include/Neo4j-cpp-driver-master/api.cpp.s
+.PHONY : usr/include/Neo4j-cpp-driver-master/api.s
+
+# target to generate assembly for a file
+usr/include/Neo4j-cpp-driver-master/api.cpp.s:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/neo4jDriver_static.dir/build.make tests/CMakeFiles/neo4jDriver_static.dir/usr/include/Neo4j-cpp-driver-master/api.cpp.s
+.PHONY : usr/include/Neo4j-cpp-driver-master/api.cpp.s
+
+usr/include/Neo4j-cpp-driver-master/database.o: usr/include/Neo4j-cpp-driver-master/database.cpp.o
+.PHONY : usr/include/Neo4j-cpp-driver-master/database.o
+
+# target to build an object file
+usr/include/Neo4j-cpp-driver-master/database.cpp.o:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/neo4jDriver_static.dir/build.make tests/CMakeFiles/neo4jDriver_static.dir/usr/include/Neo4j-cpp-driver-master/database.cpp.o
+.PHONY : usr/include/Neo4j-cpp-driver-master/database.cpp.o
+
+usr/include/Neo4j-cpp-driver-master/database.i: usr/include/Neo4j-cpp-driver-master/database.cpp.i
+.PHONY : usr/include/Neo4j-cpp-driver-master/database.i
+
+# target to preprocess a source file
+usr/include/Neo4j-cpp-driver-master/database.cpp.i:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/neo4jDriver_static.dir/build.make tests/CMakeFiles/neo4jDriver_static.dir/usr/include/Neo4j-cpp-driver-master/database.cpp.i
+.PHONY : usr/include/Neo4j-cpp-driver-master/database.cpp.i
+
+usr/include/Neo4j-cpp-driver-master/database.s: usr/include/Neo4j-cpp-driver-master/database.cpp.s
+.PHONY : usr/include/Neo4j-cpp-driver-master/database.s
+
+# target to generate assembly for a file
+usr/include/Neo4j-cpp-driver-master/database.cpp.s:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/neo4jDriver_static.dir/build.make tests/CMakeFiles/neo4jDriver_static.dir/usr/include/Neo4j-cpp-driver-master/database.cpp.s
+.PHONY : usr/include/Neo4j-cpp-driver-master/database.cpp.s
+
+usr/include/Neo4j-cpp-driver-master/kit.o: usr/include/Neo4j-cpp-driver-master/kit.cpp.o
+.PHONY : usr/include/Neo4j-cpp-driver-master/kit.o
+
+# target to build an object file
+usr/include/Neo4j-cpp-driver-master/kit.cpp.o:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/neo4jDriver_static.dir/build.make tests/CMakeFiles/neo4jDriver_static.dir/usr/include/Neo4j-cpp-driver-master/kit.cpp.o
+.PHONY : usr/include/Neo4j-cpp-driver-master/kit.cpp.o
+
+usr/include/Neo4j-cpp-driver-master/kit.i: usr/include/Neo4j-cpp-driver-master/kit.cpp.i
+.PHONY : usr/include/Neo4j-cpp-driver-master/kit.i
+
+# target to preprocess a source file
+usr/include/Neo4j-cpp-driver-master/kit.cpp.i:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/neo4jDriver_static.dir/build.make tests/CMakeFiles/neo4jDriver_static.dir/usr/include/Neo4j-cpp-driver-master/kit.cpp.i
+.PHONY : usr/include/Neo4j-cpp-driver-master/kit.cpp.i
+
+usr/include/Neo4j-cpp-driver-master/kit.s: usr/include/Neo4j-cpp-driver-master/kit.cpp.s
+.PHONY : usr/include/Neo4j-cpp-driver-master/kit.s
+
+# target to generate assembly for a file
+usr/include/Neo4j-cpp-driver-master/kit.cpp.s:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/neo4jDriver_static.dir/build.make tests/CMakeFiles/neo4jDriver_static.dir/usr/include/Neo4j-cpp-driver-master/kit.cpp.s
+.PHONY : usr/include/Neo4j-cpp-driver-master/kit.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -200,6 +286,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... neo4jDriver_static"
 	@echo "... testClient"
 	@echo "... testServer"
 	@echo "... testClient.o"
@@ -208,6 +295,15 @@ help:
 	@echo "... testServer.o"
 	@echo "... testServer.i"
 	@echo "... testServer.s"
+	@echo "... usr/include/Neo4j-cpp-driver-master/api.o"
+	@echo "... usr/include/Neo4j-cpp-driver-master/api.i"
+	@echo "... usr/include/Neo4j-cpp-driver-master/api.s"
+	@echo "... usr/include/Neo4j-cpp-driver-master/database.o"
+	@echo "... usr/include/Neo4j-cpp-driver-master/database.i"
+	@echo "... usr/include/Neo4j-cpp-driver-master/database.s"
+	@echo "... usr/include/Neo4j-cpp-driver-master/kit.o"
+	@echo "... usr/include/Neo4j-cpp-driver-master/kit.i"
+	@echo "... usr/include/Neo4j-cpp-driver-master/kit.s"
 .PHONY : help
 
 

@@ -69,10 +69,52 @@ include src/CMakeFiles/HttpServer_shared.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/HttpServer_shared.dir/flags.make
 
+src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnection.cpp.o: src/CMakeFiles/HttpServer_shared.dir/flags.make
+src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnection.cpp.o: ../src/Database/MySQLConnection.cpp
+src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnection.cpp.o: src/CMakeFiles/HttpServer_shared.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnection.cpp.o"
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnection.cpp.o -MF CMakeFiles/HttpServer_shared.dir/Database/MySQLConnection.cpp.o.d -o CMakeFiles/HttpServer_shared.dir/Database/MySQLConnection.cpp.o -c /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/Database/MySQLConnection.cpp
+
+src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HttpServer_shared.dir/Database/MySQLConnection.cpp.i"
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/Database/MySQLConnection.cpp > CMakeFiles/HttpServer_shared.dir/Database/MySQLConnection.cpp.i
+
+src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HttpServer_shared.dir/Database/MySQLConnection.cpp.s"
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/Database/MySQLConnection.cpp -o CMakeFiles/HttpServer_shared.dir/Database/MySQLConnection.cpp.s
+
+src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnectionPool.cpp.o: src/CMakeFiles/HttpServer_shared.dir/flags.make
+src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnectionPool.cpp.o: ../src/Database/MySQLConnectionPool.cpp
+src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnectionPool.cpp.o: src/CMakeFiles/HttpServer_shared.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnectionPool.cpp.o"
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnectionPool.cpp.o -MF CMakeFiles/HttpServer_shared.dir/Database/MySQLConnectionPool.cpp.o.d -o CMakeFiles/HttpServer_shared.dir/Database/MySQLConnectionPool.cpp.o -c /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/Database/MySQLConnectionPool.cpp
+
+src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnectionPool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HttpServer_shared.dir/Database/MySQLConnectionPool.cpp.i"
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/Database/MySQLConnectionPool.cpp > CMakeFiles/HttpServer_shared.dir/Database/MySQLConnectionPool.cpp.i
+
+src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnectionPool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HttpServer_shared.dir/Database/MySQLConnectionPool.cpp.s"
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/Database/MySQLConnectionPool.cpp -o CMakeFiles/HttpServer_shared.dir/Database/MySQLConnectionPool.cpp.s
+
+src/CMakeFiles/HttpServer_shared.dir/Database/Neo4jUtil.cpp.o: src/CMakeFiles/HttpServer_shared.dir/flags.make
+src/CMakeFiles/HttpServer_shared.dir/Database/Neo4jUtil.cpp.o: ../src/Database/Neo4jUtil.cpp
+src/CMakeFiles/HttpServer_shared.dir/Database/Neo4jUtil.cpp.o: src/CMakeFiles/HttpServer_shared.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/HttpServer_shared.dir/Database/Neo4jUtil.cpp.o"
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/HttpServer_shared.dir/Database/Neo4jUtil.cpp.o -MF CMakeFiles/HttpServer_shared.dir/Database/Neo4jUtil.cpp.o.d -o CMakeFiles/HttpServer_shared.dir/Database/Neo4jUtil.cpp.o -c /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/Database/Neo4jUtil.cpp
+
+src/CMakeFiles/HttpServer_shared.dir/Database/Neo4jUtil.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HttpServer_shared.dir/Database/Neo4jUtil.cpp.i"
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/Database/Neo4jUtil.cpp > CMakeFiles/HttpServer_shared.dir/Database/Neo4jUtil.cpp.i
+
+src/CMakeFiles/HttpServer_shared.dir/Database/Neo4jUtil.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HttpServer_shared.dir/Database/Neo4jUtil.cpp.s"
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/Database/Neo4jUtil.cpp -o CMakeFiles/HttpServer_shared.dir/Database/Neo4jUtil.cpp.s
+
 src/CMakeFiles/HttpServer_shared.dir/http/HttpParse.cpp.o: src/CMakeFiles/HttpServer_shared.dir/flags.make
 src/CMakeFiles/HttpServer_shared.dir/http/HttpParse.cpp.o: ../src/http/HttpParse.cpp
 src/CMakeFiles/HttpServer_shared.dir/http/HttpParse.cpp.o: src/CMakeFiles/HttpServer_shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/HttpServer_shared.dir/http/HttpParse.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/HttpServer_shared.dir/http/HttpParse.cpp.o"
 	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/HttpServer_shared.dir/http/HttpParse.cpp.o -MF CMakeFiles/HttpServer_shared.dir/http/HttpParse.cpp.o.d -o CMakeFiles/HttpServer_shared.dir/http/HttpParse.cpp.o -c /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/http/HttpParse.cpp
 
 src/CMakeFiles/HttpServer_shared.dir/http/HttpParse.cpp.i: cmake_force
@@ -86,7 +128,7 @@ src/CMakeFiles/HttpServer_shared.dir/http/HttpParse.cpp.s: cmake_force
 src/CMakeFiles/HttpServer_shared.dir/http/HttpRequest.cpp.o: src/CMakeFiles/HttpServer_shared.dir/flags.make
 src/CMakeFiles/HttpServer_shared.dir/http/HttpRequest.cpp.o: ../src/http/HttpRequest.cpp
 src/CMakeFiles/HttpServer_shared.dir/http/HttpRequest.cpp.o: src/CMakeFiles/HttpServer_shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/HttpServer_shared.dir/http/HttpRequest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/HttpServer_shared.dir/http/HttpRequest.cpp.o"
 	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/HttpServer_shared.dir/http/HttpRequest.cpp.o -MF CMakeFiles/HttpServer_shared.dir/http/HttpRequest.cpp.o.d -o CMakeFiles/HttpServer_shared.dir/http/HttpRequest.cpp.o -c /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/http/HttpRequest.cpp
 
 src/CMakeFiles/HttpServer_shared.dir/http/HttpRequest.cpp.i: cmake_force
@@ -100,7 +142,7 @@ src/CMakeFiles/HttpServer_shared.dir/http/HttpRequest.cpp.s: cmake_force
 src/CMakeFiles/HttpServer_shared.dir/http/HttpResponse.cpp.o: src/CMakeFiles/HttpServer_shared.dir/flags.make
 src/CMakeFiles/HttpServer_shared.dir/http/HttpResponse.cpp.o: ../src/http/HttpResponse.cpp
 src/CMakeFiles/HttpServer_shared.dir/http/HttpResponse.cpp.o: src/CMakeFiles/HttpServer_shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/HttpServer_shared.dir/http/HttpResponse.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/HttpServer_shared.dir/http/HttpResponse.cpp.o"
 	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/HttpServer_shared.dir/http/HttpResponse.cpp.o -MF CMakeFiles/HttpServer_shared.dir/http/HttpResponse.cpp.o.d -o CMakeFiles/HttpServer_shared.dir/http/HttpResponse.cpp.o -c /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/http/HttpResponse.cpp
 
 src/CMakeFiles/HttpServer_shared.dir/http/HttpResponse.cpp.i: cmake_force
@@ -114,7 +156,7 @@ src/CMakeFiles/HttpServer_shared.dir/http/HttpResponse.cpp.s: cmake_force
 src/CMakeFiles/HttpServer_shared.dir/http/HttpServer.cpp.o: src/CMakeFiles/HttpServer_shared.dir/flags.make
 src/CMakeFiles/HttpServer_shared.dir/http/HttpServer.cpp.o: ../src/http/HttpServer.cpp
 src/CMakeFiles/HttpServer_shared.dir/http/HttpServer.cpp.o: src/CMakeFiles/HttpServer_shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/HttpServer_shared.dir/http/HttpServer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/HttpServer_shared.dir/http/HttpServer.cpp.o"
 	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/HttpServer_shared.dir/http/HttpServer.cpp.o -MF CMakeFiles/HttpServer_shared.dir/http/HttpServer.cpp.o.d -o CMakeFiles/HttpServer_shared.dir/http/HttpServer.cpp.o -c /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/http/HttpServer.cpp
 
 src/CMakeFiles/HttpServer_shared.dir/http/HttpServer.cpp.i: cmake_force
@@ -128,7 +170,7 @@ src/CMakeFiles/HttpServer_shared.dir/http/HttpServer.cpp.s: cmake_force
 src/CMakeFiles/HttpServer_shared.dir/router/Router.cpp.o: src/CMakeFiles/HttpServer_shared.dir/flags.make
 src/CMakeFiles/HttpServer_shared.dir/router/Router.cpp.o: ../src/router/Router.cpp
 src/CMakeFiles/HttpServer_shared.dir/router/Router.cpp.o: src/CMakeFiles/HttpServer_shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/HttpServer_shared.dir/router/Router.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/HttpServer_shared.dir/router/Router.cpp.o"
 	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/HttpServer_shared.dir/router/Router.cpp.o -MF CMakeFiles/HttpServer_shared.dir/router/Router.cpp.o.d -o CMakeFiles/HttpServer_shared.dir/router/Router.cpp.o -c /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/router/Router.cpp
 
 src/CMakeFiles/HttpServer_shared.dir/router/Router.cpp.i: cmake_force
@@ -141,6 +183,9 @@ src/CMakeFiles/HttpServer_shared.dir/router/Router.cpp.s: cmake_force
 
 # Object files for target HttpServer_shared
 HttpServer_shared_OBJECTS = \
+"CMakeFiles/HttpServer_shared.dir/Database/MySQLConnection.cpp.o" \
+"CMakeFiles/HttpServer_shared.dir/Database/MySQLConnectionPool.cpp.o" \
+"CMakeFiles/HttpServer_shared.dir/Database/Neo4jUtil.cpp.o" \
 "CMakeFiles/HttpServer_shared.dir/http/HttpParse.cpp.o" \
 "CMakeFiles/HttpServer_shared.dir/http/HttpRequest.cpp.o" \
 "CMakeFiles/HttpServer_shared.dir/http/HttpResponse.cpp.o" \
@@ -150,6 +195,9 @@ HttpServer_shared_OBJECTS = \
 # External object files for target HttpServer_shared
 HttpServer_shared_EXTERNAL_OBJECTS =
 
+src/libHttpServer_shared.so: src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnection.cpp.o
+src/libHttpServer_shared.so: src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnectionPool.cpp.o
+src/libHttpServer_shared.so: src/CMakeFiles/HttpServer_shared.dir/Database/Neo4jUtil.cpp.o
 src/libHttpServer_shared.so: src/CMakeFiles/HttpServer_shared.dir/http/HttpParse.cpp.o
 src/libHttpServer_shared.so: src/CMakeFiles/HttpServer_shared.dir/http/HttpRequest.cpp.o
 src/libHttpServer_shared.so: src/CMakeFiles/HttpServer_shared.dir/http/HttpResponse.cpp.o
@@ -157,7 +205,7 @@ src/libHttpServer_shared.so: src/CMakeFiles/HttpServer_shared.dir/http/HttpServe
 src/libHttpServer_shared.so: src/CMakeFiles/HttpServer_shared.dir/router/Router.cpp.o
 src/libHttpServer_shared.so: src/CMakeFiles/HttpServer_shared.dir/build.make
 src/libHttpServer_shared.so: src/CMakeFiles/HttpServer_shared.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libHttpServer_shared.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX shared library libHttpServer_shared.so"
 	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HttpServer_shared.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

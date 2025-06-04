@@ -47,7 +47,8 @@
 					"targetIndexes" : 
 					[
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -66,7 +67,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -75,21 +77,28 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "HttpServer_shared::@145eef247bfb46b6828c",
-					"jsonFile" : "target-HttpServer_shared-Debug-36d454940e528a6226c6.json",
+					"jsonFile" : "target-HttpServer_shared-Debug-9452b35f1268ac6e89ae.json",
 					"name" : "HttpServer_shared",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
+					"id" : "neo4jDriver_static::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-neo4jDriver_static-Debug-c2ec266413d2eca92d1f.json",
+					"name" : "neo4jDriver_static",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
 					"id" : "testClient::@a44f0ac069e85531cdee",
-					"jsonFile" : "target-testClient-Debug-86e16e47cb905e7f929a.json",
+					"jsonFile" : "target-testClient-Debug-1fd44a8092f297c0e3e7.json",
 					"name" : "testClient",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "testServer::@a44f0ac069e85531cdee",
-					"jsonFile" : "target-testServer-Debug-fc2f614d95130ef8962b.json",
+					"jsonFile" : "target-testServer-Debug-1f0f254690928778c498.json",
 					"name" : "testServer",
 					"projectIndex" : 0
 				}

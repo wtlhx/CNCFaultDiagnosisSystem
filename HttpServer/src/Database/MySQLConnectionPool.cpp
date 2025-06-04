@@ -25,7 +25,7 @@ MySQLConnectionPool::~MySQLConnectionPool()
 
 void MySQLConnectionPool::createConnetion()
 {
-    std::shared_ptr<MySQLConnection> connection = std::make_shared<MySQLConnection>(MySQLConnection(host, user, password, schema));
+    std::shared_ptr<MySQLConnection> connection = std::make_shared<MySQLConnection>(host, user, password, schema);
     connection->setStartTime();
     mySQLconnectionPool.push(connection);
 }
@@ -64,7 +64,7 @@ std::shared_ptr<MySQLConnection> MySQLConnectionPool::getConnection()
         }
         
         return std::shared_ptr<MySQLConnection>(connection.get(), 
-        [this, connection](){
+        [this, connection](MySQLConnection*){
             std::lock_guard<std::mutex> lock(mtx);
             mySQLconnectionPool.push(connection);
             connection->setStartTime();
@@ -79,6 +79,7 @@ std::shared_ptr<MySQLConnection> MySQLConnectionPool::getConnection()
             mySQLconnectionPool.push(connection); // 放回去
             cv.notify_all();
         }
+        throw;
     }
     
 }

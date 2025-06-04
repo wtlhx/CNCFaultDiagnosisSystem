@@ -130,6 +130,78 @@ HttpServer_shared/fast:
 	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/HttpServer_shared.dir/build.make src/CMakeFiles/HttpServer_shared.dir/build
 .PHONY : HttpServer_shared/fast
 
+Database/MySQLConnection.o: Database/MySQLConnection.cpp.o
+.PHONY : Database/MySQLConnection.o
+
+# target to build an object file
+Database/MySQLConnection.cpp.o:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/HttpServer_shared.dir/build.make src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnection.cpp.o
+.PHONY : Database/MySQLConnection.cpp.o
+
+Database/MySQLConnection.i: Database/MySQLConnection.cpp.i
+.PHONY : Database/MySQLConnection.i
+
+# target to preprocess a source file
+Database/MySQLConnection.cpp.i:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/HttpServer_shared.dir/build.make src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnection.cpp.i
+.PHONY : Database/MySQLConnection.cpp.i
+
+Database/MySQLConnection.s: Database/MySQLConnection.cpp.s
+.PHONY : Database/MySQLConnection.s
+
+# target to generate assembly for a file
+Database/MySQLConnection.cpp.s:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/HttpServer_shared.dir/build.make src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnection.cpp.s
+.PHONY : Database/MySQLConnection.cpp.s
+
+Database/MySQLConnectionPool.o: Database/MySQLConnectionPool.cpp.o
+.PHONY : Database/MySQLConnectionPool.o
+
+# target to build an object file
+Database/MySQLConnectionPool.cpp.o:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/HttpServer_shared.dir/build.make src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnectionPool.cpp.o
+.PHONY : Database/MySQLConnectionPool.cpp.o
+
+Database/MySQLConnectionPool.i: Database/MySQLConnectionPool.cpp.i
+.PHONY : Database/MySQLConnectionPool.i
+
+# target to preprocess a source file
+Database/MySQLConnectionPool.cpp.i:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/HttpServer_shared.dir/build.make src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnectionPool.cpp.i
+.PHONY : Database/MySQLConnectionPool.cpp.i
+
+Database/MySQLConnectionPool.s: Database/MySQLConnectionPool.cpp.s
+.PHONY : Database/MySQLConnectionPool.s
+
+# target to generate assembly for a file
+Database/MySQLConnectionPool.cpp.s:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/HttpServer_shared.dir/build.make src/CMakeFiles/HttpServer_shared.dir/Database/MySQLConnectionPool.cpp.s
+.PHONY : Database/MySQLConnectionPool.cpp.s
+
+Database/Neo4jUtil.o: Database/Neo4jUtil.cpp.o
+.PHONY : Database/Neo4jUtil.o
+
+# target to build an object file
+Database/Neo4jUtil.cpp.o:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/HttpServer_shared.dir/build.make src/CMakeFiles/HttpServer_shared.dir/Database/Neo4jUtil.cpp.o
+.PHONY : Database/Neo4jUtil.cpp.o
+
+Database/Neo4jUtil.i: Database/Neo4jUtil.cpp.i
+.PHONY : Database/Neo4jUtil.i
+
+# target to preprocess a source file
+Database/Neo4jUtil.cpp.i:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/HttpServer_shared.dir/build.make src/CMakeFiles/HttpServer_shared.dir/Database/Neo4jUtil.cpp.i
+.PHONY : Database/Neo4jUtil.cpp.i
+
+Database/Neo4jUtil.s: Database/Neo4jUtil.cpp.s
+.PHONY : Database/Neo4jUtil.s
+
+# target to generate assembly for a file
+Database/Neo4jUtil.cpp.s:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/HttpServer_shared.dir/build.make src/CMakeFiles/HttpServer_shared.dir/Database/Neo4jUtil.cpp.s
+.PHONY : Database/Neo4jUtil.cpp.s
+
 http/HttpParse.o: http/HttpParse.cpp.o
 .PHONY : http/HttpParse.o
 
@@ -259,6 +331,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... HttpServer_shared"
+	@echo "... Database/MySQLConnection.o"
+	@echo "... Database/MySQLConnection.i"
+	@echo "... Database/MySQLConnection.s"
+	@echo "... Database/MySQLConnectionPool.o"
+	@echo "... Database/MySQLConnectionPool.i"
+	@echo "... Database/MySQLConnectionPool.s"
+	@echo "... Database/Neo4jUtil.o"
+	@echo "... Database/Neo4jUtil.i"
+	@echo "... Database/Neo4jUtil.s"
 	@echo "... http/HttpParse.o"
 	@echo "... http/HttpParse.i"
 	@echo "... http/HttpParse.s"

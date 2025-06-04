@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DHttpServer_shared_EXPORTS
 
-CXX_INCLUDES = -I/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/include/http -I/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/include/router
+CXX_INCLUDES = -I/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/include/http -I/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/include/router -I/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/include/Database -I/usr/include/jsoncpp
 
 CXX_FLAGS = -fPIC -std=gnu++17
 

@@ -130,6 +130,19 @@ HttpServer_shared/fast:
 .PHONY : HttpServer_shared/fast
 
 #=============================================================================
+# Target rules for targets named neo4jDriver_static
+
+# Build rule for target.
+neo4jDriver_static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 neo4jDriver_static
+.PHONY : neo4jDriver_static
+
+# fast build rule for target.
+neo4jDriver_static/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/neo4jDriver_static.dir/build.make tests/CMakeFiles/neo4jDriver_static.dir/build
+.PHONY : neo4jDriver_static/fast
+
+#=============================================================================
 # Target rules for targets named testClient
 
 # Build rule for target.
@@ -164,6 +177,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... HttpServer_shared"
+	@echo "... neo4jDriver_static"
 	@echo "... testClient"
 	@echo "... testServer"
 .PHONY : help

@@ -26,13 +26,13 @@ public:
 
     //执行query语句，模板函数，可以绑定参数包
     template <typename... Args>
-    sql::ResultSet* exectuteQuery(sql::SQLString& sql, Args&&... args) //函数模板，&&是万能引用，可以接受左值和右值
+    sql::ResultSet* exectuteQuery(const sql::SQLString& sql, Args&&... args) //函数模板，&&是万能引用，可以接受左值和右值
     {
         std::lock_guard<std::mutex> lock(mtx);
         try
         {
             std::unique_ptr<sql::PreparedStatement> preStmt(connection->prepareStatement(sql));
-            bindParams(preStmt, 1, std::forward<Args>(args)...);
+            bindParams(preStmt.get(), 1, std::forward<Args>(args)...);
             return preStmt->executeQuery();
         }
         catch(const sql::SQLException& e)
@@ -43,13 +43,14 @@ public:
     }
 
     //执行update语句
-    template<typename... Args>
-    int executeUpdate(const sql::SQLString& sql, Args... agrs)
+    template <typename... Args>
+    int executeUpdate(const sql::SQLString& sql, Args&&... args)
     {
+        std::lock_guard<std::mutex> lock(mtx);
         try
         {
             std::unique_ptr<sql::PreparedStatement> preStmt(connection->prepareStatement(sql));
-            bindParams(preStmt, 1, std::forward<Args>(args)...);
+            bindParams(preStmt.get(), 1, std::forward<Args>(args)...);
             return preStmt->executeUpdate();
         }
         catch(const sql::SQLException& e)

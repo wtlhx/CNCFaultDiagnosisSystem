@@ -1,8 +1,9 @@
 {
+	"archive" : {},
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/testServer"
+			"path" : "tests/libneo4jDriver_static.a"
 		}
 	],
 	"backtrace" : 1,
@@ -10,8 +11,7 @@
 	{
 		"commands" : 
 		[
-			"add_executable",
-			"target_link_libraries",
+			"add_library",
 			"include_directories"
 		],
 		"files" : 
@@ -27,41 +27,35 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 7,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
 				"line" : 9,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 11,
 				"parent" : 0
 			},
 			{
 				"file" : 1
 			},
 			{
-				"command" : 2,
+				"command" : 1,
 				"file" : 1,
 				"line" : 7,
-				"parent" : 4
+				"parent" : 2
 			},
 			{
-				"command" : 2,
+				"command" : 1,
 				"file" : 1,
 				"line" : 8,
-				"parent" : 4
+				"parent" : 2
 			},
 			{
-				"command" : 2,
+				"command" : 1,
 				"file" : 1,
 				"line" : 9,
-				"parent" : 4
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 10,
+				"parent" : 2
 			}
 		]
 	},
@@ -80,16 +74,20 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 5,
+					"backtrace" : 3,
 					"path" : "/home/luohuaxu/\u6545\u969c\u8bca\u65ad\u7cfb\u7edf/CNCFaultDiagnosisSystem/HttpServer/include/http"
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 4,
 					"path" : "/home/luohuaxu/\u6545\u969c\u8bca\u65ad\u7cfb\u7edf/CNCFaultDiagnosisSystem/HttpServer/include/router"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 5,
 					"path" : "/home/luohuaxu/\u6545\u969c\u8bca\u65ad\u7cfb\u7edf/CNCFaultDiagnosisSystem/HttpServer/include/Database"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/usr/include/jsoncpp"
 				}
 			],
 			"language" : "CXX",
@@ -103,54 +101,15 @@
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2
 			]
 		}
 	],
-	"dependencies" : 
-	[
-		{
-			"backtrace" : 2,
-			"id" : "HttpServer_shared::@145eef247bfb46b6828c"
-		}
-	],
-	"id" : "testServer::@a44f0ac069e85531cdee",
-	"link" : 
-	{
-		"commandFragments" : 
-		[
-			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
-			{
-				"fragment" : "",
-				"role" : "flags"
-			},
-			{
-				"fragment" : "-Wl,-rpath,/home/luohuaxu/\u6545\u969c\u8bca\u65ad\u7cfb\u7edf/CNCFaultDiagnosisSystem/build/src",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "../src/libHttpServer_shared.so",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 3,
-				"fragment" : "-lmuduo_net",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 3,
-				"fragment" : "-lmuduo_base",
-				"role" : "libraries"
-			}
-		],
-		"language" : "CXX"
-	},
-	"name" : "testServer",
-	"nameOnDisk" : "testServer",
+	"id" : "neo4jDriver_static::@a44f0ac069e85531cdee",
+	"name" : "neo4jDriver_static",
+	"nameOnDisk" : "libneo4jDriver_static.a",
 	"paths" : 
 	{
 		"build" : "tests",
@@ -162,7 +121,9 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2
 			]
 		}
 	],
@@ -171,9 +132,21 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "tests/testServer.cpp",
+			"path" : "/usr/include/Neo4j-cpp-driver-master/api.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/usr/include/Neo4j-cpp-driver-master/database.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/usr/include/Neo4j-cpp-driver-master/kit.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
-	"type" : "EXECUTABLE"
+	"type" : "STATIC_LIBRARY"
 }

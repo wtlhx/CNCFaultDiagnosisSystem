@@ -18,7 +18,7 @@ int main()
         throw std::runtime_error("Client connect error");
     }
     std::string request = 
-                        "GET / HTTP/1.1\r\n"
+                        "GET /neo4j?label=alarm_id&name=AX_ERR_0000016 HTTP/1.1\r\n"
                         "Host: localhost\r\n"
                         "Connection: close\r\n"
                         "\r\n";

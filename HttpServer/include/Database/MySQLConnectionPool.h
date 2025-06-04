@@ -26,6 +26,10 @@ private:
     MySQLConnectionPool();
     ~MySQLConnectionPool();
 
+    // 禁止外部拷贝和复制
+    MySQLConnectionPool(const MySQLConnectionPool&) = delete;
+    MySQLConnectionPool& operator=(const MySQLConnectionPool&) = delete;
+    
     void createConnetion();
     void deleteConnection();
     void produceConnection();

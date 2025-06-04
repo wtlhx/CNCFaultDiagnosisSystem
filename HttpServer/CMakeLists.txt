@@ -7,6 +7,7 @@ project(HttpServer)
 include_directories(${PROJECT_SOURCE_DIR}/include/http)
 include_directories(${PROJECT_SOURCE_DIR}/include/router)
 include_directories(${PROJECT_SOURCE_DIR}/include/Database)
+include_directories(/usr/include/jsoncpp)
 
 add_subdirectory(src)
 add_subdirectory(tests)

@@ -9,13 +9,23 @@ Neo4jUtil::Neo4jUtil(
 }
 Neo4jUtil::~Neo4jUtil()
 {
+    try
+    {
+        close(); // 在析构函数中关闭数据库连接
+    }
+    catch(const std::exception& e)
+    {
+        LOG_ERROR << "Failed to close Neo4j database in destructor: " << e.what();
+    }
 }
 
 void Neo4jUtil::connect()
 {
     try
     {
+        LOG_INFO << "connecting" ;
         neo4jAPI.connectDatabase();
+        LOG_INFO << "Connected to Neo4j database at " << neo4jAPI.getHost() << ":" << neo4jAPI.getPort();
     }
     catch(const std::exception& e)
     {
@@ -37,20 +47,28 @@ void Neo4jUtil::close()
 
 Json::Value Neo4jUtil::queryReasonAndSolution(std::string linkedLabel, Json::Value &linkedProperties)
 {
+    //1.id/inf/phenomenon --> reason
+    //2.reason --> solution
     try
     {
         //接收reason的查询结果
         Json::Value reason;
         Json::Value nullvalue; // 用于表示空值
+        // 查询reason节点，使用linkedLabel和linkedProperties作为查询条件
         reason = neo4jAPI.selectNodesByAnotherLinkedNode("reason", nullvalue, linkedLabel + "2reason", nullvalue, linkedLabel, linkedProperties);
-        //接收solution的查询结果
-        Json::Value solution;
-        solution = neo4jAPI.selectNodesByAnotherLinkedNode("solution", nullvalue, linkedLabel + "2solution", nullvalue, linkedLabel, linkedProperties);
-        //将reason和solution合并到一个Json对象中
-        Json::Value result;
-        result["reason"] = reason;
-        result["solution"] = solution;
-        return result; // 返回包含reason和solution的Json对象
+        Json::Value resultList;
+        for(int i = 0; i < reason.size(); i++)
+        {
+            Json::Value result; // 用于存储每个reason和对应的solution
+            //接收solution的查询结果
+            Json::Value solution;
+            solution = neo4jAPI.selectNodesByAnotherLinkedNode("solution", nullvalue, "reason2solution", nullvalue, reason[i]["_id"].asLargestUInt());
+            //将reason和solution合并到一个Json对象中
+            result["reason"] = reason;
+            result["solution"] = solution;
+            resultList.append(result); // 将每个结果添加到结果列表中
+        }
+        return resultList; // 返回包含reason和solution的Json对象
     }
     catch(const std::exception& e)
     {

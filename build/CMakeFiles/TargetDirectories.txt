@@ -3,6 +3,7 @@
 /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/src/CMakeFiles/HttpServer_shared.dir
 /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/src/CMakeFiles/edit_cache.dir
 /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/src/CMakeFiles/rebuild_cache.dir
+/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/tests/CMakeFiles/neo4jDriver_static.dir
 /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/tests/CMakeFiles/testClient.dir
 /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/tests/CMakeFiles/testServer.dir
 /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/tests/CMakeFiles/edit_cache.dir
