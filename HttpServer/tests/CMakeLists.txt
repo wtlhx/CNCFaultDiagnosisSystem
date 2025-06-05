@@ -1,4 +1,4 @@
-file(GLOB TEST_SOURCES ${PROJECT_SOURCE_DIR}/tests/*.cpp)
+file(GLOB TEST_SOURCES ${PROJECT_SOURCE_DIR}/HttpServer/tests/*.cpp)
 #找到
 find_package(jsoncpp CONFIG REQUIRED)
 find_library(MYSQL_CPPCONN_LIB mysqlcppconn)

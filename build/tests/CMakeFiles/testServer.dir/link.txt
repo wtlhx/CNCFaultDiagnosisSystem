@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/testServer.dir/testServer.cpp.o -o ../bin/testServer  -Wl,-rpath,/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/src ../src/libHttpServer_shared.so -lmuduo_net -lmuduo_base /usr/lib/x86_64-linux-gnu/libjsoncpp.so.1.9.5 libneo4jDriver_static.a /usr/lib/x86_64-linux-gnu/libmysqlcppconn.so /usr/lib/x86_64-linux-gnu/libcurl.so 

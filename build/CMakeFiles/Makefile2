@@ -54,7 +54,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer
+CMAKE_SOURCE_DIR = /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build
@@ -63,157 +63,192 @@ CMAKE_BINARY_DIR = /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/bui
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: src/all
-all: tests/all
+all: FaultDiagnosisServer/src/all
+all: FaultDiagnosisServer/main/all
+all: HttpServer/src/all
+all: HttpServer/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: src/preinstall
-preinstall: tests/preinstall
+preinstall: FaultDiagnosisServer/src/preinstall
+preinstall: FaultDiagnosisServer/main/preinstall
+preinstall: HttpServer/src/preinstall
+preinstall: HttpServer/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: src/clean
-clean: tests/clean
+clean: FaultDiagnosisServer/src/clean
+clean: FaultDiagnosisServer/main/clean
+clean: HttpServer/src/clean
+clean: HttpServer/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory src
+# Directory level rules for directory FaultDiagnosisServer/main
 
 # Recursive "all" directory target.
-src/all: src/CMakeFiles/HttpServer_shared.dir/all
-.PHONY : src/all
+FaultDiagnosisServer/main/all: FaultDiagnosisServer/main/CMakeFiles/neo4jDriver_static.dir/all
+.PHONY : FaultDiagnosisServer/main/all
 
 # Recursive "preinstall" directory target.
-src/preinstall:
-.PHONY : src/preinstall
+FaultDiagnosisServer/main/preinstall:
+.PHONY : FaultDiagnosisServer/main/preinstall
 
 # Recursive "clean" directory target.
-src/clean: src/CMakeFiles/HttpServer_shared.dir/clean
-.PHONY : src/clean
+FaultDiagnosisServer/main/clean: FaultDiagnosisServer/main/CMakeFiles/neo4jDriver_static.dir/clean
+FaultDiagnosisServer/main/clean: FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/clean
+.PHONY : FaultDiagnosisServer/main/clean
 
 #=============================================================================
-# Directory level rules for directory tests
+# Directory level rules for directory FaultDiagnosisServer/src
 
 # Recursive "all" directory target.
-tests/all: tests/CMakeFiles/neo4jDriver_static.dir/all
-.PHONY : tests/all
+FaultDiagnosisServer/src/all: FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/all
+.PHONY : FaultDiagnosisServer/src/all
 
 # Recursive "preinstall" directory target.
-tests/preinstall:
-.PHONY : tests/preinstall
+FaultDiagnosisServer/src/preinstall:
+.PHONY : FaultDiagnosisServer/src/preinstall
 
 # Recursive "clean" directory target.
-tests/clean: tests/CMakeFiles/neo4jDriver_static.dir/clean
-tests/clean: tests/CMakeFiles/testClient.dir/clean
-tests/clean: tests/CMakeFiles/testServer.dir/clean
-.PHONY : tests/clean
+FaultDiagnosisServer/src/clean: FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/clean
+.PHONY : FaultDiagnosisServer/src/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/HttpServer_shared.dir
+# Directory level rules for directory HttpServer
+
+# Recursive "all" directory target.
+HttpServer/all:
+.PHONY : HttpServer/all
+
+# Recursive "preinstall" directory target.
+HttpServer/preinstall:
+.PHONY : HttpServer/preinstall
+
+# Recursive "clean" directory target.
+HttpServer/clean:
+.PHONY : HttpServer/clean
+
+#=============================================================================
+# Directory level rules for directory HttpServer/src
+
+# Recursive "all" directory target.
+HttpServer/src/all: HttpServer/src/CMakeFiles/HttpServer_shared.dir/all
+.PHONY : HttpServer/src/all
+
+# Recursive "preinstall" directory target.
+HttpServer/src/preinstall:
+.PHONY : HttpServer/src/preinstall
+
+# Recursive "clean" directory target.
+HttpServer/src/clean: HttpServer/src/CMakeFiles/HttpServer_shared.dir/clean
+.PHONY : HttpServer/src/clean
+
+#=============================================================================
+# Target rules for target FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir
 
 # All Build rule for target.
-src/CMakeFiles/HttpServer_shared.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/HttpServer_shared.dir/build.make src/CMakeFiles/HttpServer_shared.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/HttpServer_shared.dir/build.make src/CMakeFiles/HttpServer_shared.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target HttpServer_shared"
-.PHONY : src/CMakeFiles/HttpServer_shared.dir/all
+FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/all:
+	$(MAKE) $(MAKESILENT) -f FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/build.make FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/depend
+	$(MAKE) $(MAKESILENT) -f FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/build.make FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles --progress-num=3,4,5,6 "Built target FaultDiagnosisServer_shared"
+.PHONY : FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/HttpServer_shared.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles 9
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/HttpServer_shared.dir/all
+FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/HttpServer_shared.dir/rule
+.PHONY : FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/rule
 
 # Convenience name for target.
-HttpServer_shared: src/CMakeFiles/HttpServer_shared.dir/rule
-.PHONY : HttpServer_shared
+FaultDiagnosisServer_shared: FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/rule
+.PHONY : FaultDiagnosisServer_shared
 
 # clean rule for target.
-src/CMakeFiles/HttpServer_shared.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/HttpServer_shared.dir/build.make src/CMakeFiles/HttpServer_shared.dir/clean
-.PHONY : src/CMakeFiles/HttpServer_shared.dir/clean
+FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/clean:
+	$(MAKE) $(MAKESILENT) -f FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/build.make FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/clean
+.PHONY : FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/clean
 
 #=============================================================================
-# Target rules for target tests/CMakeFiles/neo4jDriver_static.dir
+# Target rules for target FaultDiagnosisServer/main/CMakeFiles/neo4jDriver_static.dir
 
 # All Build rule for target.
-tests/CMakeFiles/neo4jDriver_static.dir/all:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/neo4jDriver_static.dir/build.make tests/CMakeFiles/neo4jDriver_static.dir/depend
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/neo4jDriver_static.dir/build.make tests/CMakeFiles/neo4jDriver_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles --progress-num=10,11,12,13 "Built target neo4jDriver_static"
-.PHONY : tests/CMakeFiles/neo4jDriver_static.dir/all
+FaultDiagnosisServer/main/CMakeFiles/neo4jDriver_static.dir/all:
+	$(MAKE) $(MAKESILENT) -f FaultDiagnosisServer/main/CMakeFiles/neo4jDriver_static.dir/build.make FaultDiagnosisServer/main/CMakeFiles/neo4jDriver_static.dir/depend
+	$(MAKE) $(MAKESILENT) -f FaultDiagnosisServer/main/CMakeFiles/neo4jDriver_static.dir/build.make FaultDiagnosisServer/main/CMakeFiles/neo4jDriver_static.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles --progress-num=16,17,18,19 "Built target neo4jDriver_static"
+.PHONY : FaultDiagnosisServer/main/CMakeFiles/neo4jDriver_static.dir/all
 
 # Build rule for subdir invocation for target.
-tests/CMakeFiles/neo4jDriver_static.dir/rule: cmake_check_build_system
+FaultDiagnosisServer/main/CMakeFiles/neo4jDriver_static.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/neo4jDriver_static.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FaultDiagnosisServer/main/CMakeFiles/neo4jDriver_static.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles 0
-.PHONY : tests/CMakeFiles/neo4jDriver_static.dir/rule
+.PHONY : FaultDiagnosisServer/main/CMakeFiles/neo4jDriver_static.dir/rule
 
 # Convenience name for target.
-neo4jDriver_static: tests/CMakeFiles/neo4jDriver_static.dir/rule
+neo4jDriver_static: FaultDiagnosisServer/main/CMakeFiles/neo4jDriver_static.dir/rule
 .PHONY : neo4jDriver_static
 
 # clean rule for target.
-tests/CMakeFiles/neo4jDriver_static.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/neo4jDriver_static.dir/build.make tests/CMakeFiles/neo4jDriver_static.dir/clean
-.PHONY : tests/CMakeFiles/neo4jDriver_static.dir/clean
+FaultDiagnosisServer/main/CMakeFiles/neo4jDriver_static.dir/clean:
+	$(MAKE) $(MAKESILENT) -f FaultDiagnosisServer/main/CMakeFiles/neo4jDriver_static.dir/build.make FaultDiagnosisServer/main/CMakeFiles/neo4jDriver_static.dir/clean
+.PHONY : FaultDiagnosisServer/main/CMakeFiles/neo4jDriver_static.dir/clean
 
 #=============================================================================
-# Target rules for target tests/CMakeFiles/testClient.dir
+# Target rules for target FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir
 
 # All Build rule for target.
-tests/CMakeFiles/testClient.dir/all: src/CMakeFiles/HttpServer_shared.dir/all
-tests/CMakeFiles/testClient.dir/all: tests/CMakeFiles/neo4jDriver_static.dir/all
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testClient.dir/build.make tests/CMakeFiles/testClient.dir/depend
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testClient.dir/build.make tests/CMakeFiles/testClient.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles --progress-num=14,15 "Built target testClient"
-.PHONY : tests/CMakeFiles/testClient.dir/all
+FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/all: FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/all
+FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/all: FaultDiagnosisServer/main/CMakeFiles/neo4jDriver_static.dir/all
+FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/all: HttpServer/src/CMakeFiles/HttpServer_shared.dir/all
+	$(MAKE) $(MAKESILENT) -f FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/build.make FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/depend
+	$(MAKE) $(MAKESILENT) -f FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/build.make FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles --progress-num=1,2 "Built target FDChatServer"
+.PHONY : FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/all
 
 # Build rule for subdir invocation for target.
-tests/CMakeFiles/testClient.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles 15
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/testClient.dir/all
+FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles 19
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles 0
-.PHONY : tests/CMakeFiles/testClient.dir/rule
+.PHONY : FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/rule
 
 # Convenience name for target.
-testClient: tests/CMakeFiles/testClient.dir/rule
-.PHONY : testClient
+FDChatServer: FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/rule
+.PHONY : FDChatServer
 
 # clean rule for target.
-tests/CMakeFiles/testClient.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testClient.dir/build.make tests/CMakeFiles/testClient.dir/clean
-.PHONY : tests/CMakeFiles/testClient.dir/clean
+FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/clean:
+	$(MAKE) $(MAKESILENT) -f FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/build.make FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/clean
+.PHONY : FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/clean
 
 #=============================================================================
-# Target rules for target tests/CMakeFiles/testServer.dir
+# Target rules for target HttpServer/src/CMakeFiles/HttpServer_shared.dir
 
 # All Build rule for target.
-tests/CMakeFiles/testServer.dir/all: src/CMakeFiles/HttpServer_shared.dir/all
-tests/CMakeFiles/testServer.dir/all: tests/CMakeFiles/neo4jDriver_static.dir/all
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testServer.dir/build.make tests/CMakeFiles/testServer.dir/depend
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testServer.dir/build.make tests/CMakeFiles/testServer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles --progress-num=16,17 "Built target testServer"
-.PHONY : tests/CMakeFiles/testServer.dir/all
+HttpServer/src/CMakeFiles/HttpServer_shared.dir/all:
+	$(MAKE) $(MAKESILENT) -f HttpServer/src/CMakeFiles/HttpServer_shared.dir/build.make HttpServer/src/CMakeFiles/HttpServer_shared.dir/depend
+	$(MAKE) $(MAKESILENT) -f HttpServer/src/CMakeFiles/HttpServer_shared.dir/build.make HttpServer/src/CMakeFiles/HttpServer_shared.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles --progress-num=7,8,9,10,11,12,13,14,15 "Built target HttpServer_shared"
+.PHONY : HttpServer/src/CMakeFiles/HttpServer_shared.dir/all
 
 # Build rule for subdir invocation for target.
-tests/CMakeFiles/testServer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles 15
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/testServer.dir/all
+HttpServer/src/CMakeFiles/HttpServer_shared.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HttpServer/src/CMakeFiles/HttpServer_shared.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles 0
-.PHONY : tests/CMakeFiles/testServer.dir/rule
+.PHONY : HttpServer/src/CMakeFiles/HttpServer_shared.dir/rule
 
 # Convenience name for target.
-testServer: tests/CMakeFiles/testServer.dir/rule
-.PHONY : testServer
+HttpServer_shared: HttpServer/src/CMakeFiles/HttpServer_shared.dir/rule
+.PHONY : HttpServer_shared
 
 # clean rule for target.
-tests/CMakeFiles/testServer.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testServer.dir/build.make tests/CMakeFiles/testServer.dir/clean
-.PHONY : tests/CMakeFiles/testServer.dir/clean
+HttpServer/src/CMakeFiles/HttpServer_shared.dir/clean:
+	$(MAKE) $(MAKESILENT) -f HttpServer/src/CMakeFiles/HttpServer_shared.dir/build.make HttpServer/src/CMakeFiles/HttpServer_shared.dir/clean
+.PHONY : HttpServer/src/CMakeFiles/HttpServer_shared.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

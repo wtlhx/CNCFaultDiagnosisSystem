@@ -1,0 +1,2 @@
+/usr/bin/ar qc libneo4jDriver_static.a CMakeFiles/neo4jDriver_static.dir/usr/include/Neo4j-cpp-driver-master/api.cpp.o CMakeFiles/neo4jDriver_static.dir/usr/include/Neo4j-cpp-driver-master/database.cpp.o CMakeFiles/neo4jDriver_static.dir/usr/include/Neo4j-cpp-driver-master/kit.cpp.o
+/usr/bin/ranlib libneo4jDriver_static.a

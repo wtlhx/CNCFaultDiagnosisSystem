@@ -7,9 +7,11 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/CMakeLists.txt"
-  "/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/src/CMakeLists.txt"
-  "/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/tests/CMakeLists.txt"
+  "../CMakeLists.txt"
+  "../FaultDiagnosisServer/main/CMakeLists.txt"
+  "../FaultDiagnosisServer/src/CMakeLists.txt"
+  "../HttpServer/CMakeLists.txt"
+  "../HttpServer/src/CMakeLists.txt"
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
@@ -51,14 +53,16 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "FaultDiagnosisServer/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "FaultDiagnosisServer/main/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "HttpServer/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "HttpServer/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "src/CMakeFiles/HttpServer_shared.dir/DependInfo.cmake"
-  "tests/CMakeFiles/neo4jDriver_static.dir/DependInfo.cmake"
-  "tests/CMakeFiles/testClient.dir/DependInfo.cmake"
-  "tests/CMakeFiles/testServer.dir/DependInfo.cmake"
+  "FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/DependInfo.cmake"
+  "FaultDiagnosisServer/main/CMakeFiles/neo4jDriver_static.dir/DependInfo.cmake"
+  "FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/DependInfo.cmake"
+  "HttpServer/src/CMakeFiles/HttpServer_shared.dir/DependInfo.cmake"
   )

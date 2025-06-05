@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.15)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(BUILD_SHARED_LIBS ON)
+Project(FaultDiagnosisServer)
+
+include_directories(${PROJECT_SOURCE_DIR}/FaultDiagnosisServer/include)
+include_directories(${PROJECT_SOURCE_DIR}/FaultDiagnosisServer/include/chat)
+include_directories(${PROJECT_SOURCE_DIR}/HttpServer/include/Database)
+include_directories(${PROJECT_SOURCE_DIR}/HttpServer/include/http)
+include_directories(${PROJECT_SOURCE_DIR}/HttpServer/include/router)
+include_directories(/usr/include/jsoncpp)
+
+add_subdirectory(FaultDiagnosisServer/src)
+add_subdirectory(FaultDiagnosisServer/main)
+add_subdirectory(HttpServer/src)
+add_subdirectory(HttpServer/)

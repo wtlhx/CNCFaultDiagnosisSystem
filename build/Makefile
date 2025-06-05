@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer
+CMAKE_SOURCE_DIR = /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build
@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named HttpServer_shared
+# Target rules for targets named FaultDiagnosisServer_shared
 
 # Build rule for target.
-HttpServer_shared: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HttpServer_shared
-.PHONY : HttpServer_shared
+FaultDiagnosisServer_shared: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FaultDiagnosisServer_shared
+.PHONY : FaultDiagnosisServer_shared
 
 # fast build rule for target.
-HttpServer_shared/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/HttpServer_shared.dir/build.make src/CMakeFiles/HttpServer_shared.dir/build
-.PHONY : HttpServer_shared/fast
+FaultDiagnosisServer_shared/fast:
+	$(MAKE) $(MAKESILENT) -f FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/build.make FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/build
+.PHONY : FaultDiagnosisServer_shared/fast
 
 #=============================================================================
 # Target rules for targets named neo4jDriver_static
@@ -139,34 +139,34 @@ neo4jDriver_static: cmake_check_build_system
 
 # fast build rule for target.
 neo4jDriver_static/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/neo4jDriver_static.dir/build.make tests/CMakeFiles/neo4jDriver_static.dir/build
+	$(MAKE) $(MAKESILENT) -f FaultDiagnosisServer/main/CMakeFiles/neo4jDriver_static.dir/build.make FaultDiagnosisServer/main/CMakeFiles/neo4jDriver_static.dir/build
 .PHONY : neo4jDriver_static/fast
 
 #=============================================================================
-# Target rules for targets named testClient
+# Target rules for targets named FDChatServer
 
 # Build rule for target.
-testClient: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testClient
-.PHONY : testClient
+FDChatServer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FDChatServer
+.PHONY : FDChatServer
 
 # fast build rule for target.
-testClient/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testClient.dir/build.make tests/CMakeFiles/testClient.dir/build
-.PHONY : testClient/fast
+FDChatServer/fast:
+	$(MAKE) $(MAKESILENT) -f FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/build.make FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/build
+.PHONY : FDChatServer/fast
 
 #=============================================================================
-# Target rules for targets named testServer
+# Target rules for targets named HttpServer_shared
 
 # Build rule for target.
-testServer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testServer
-.PHONY : testServer
+HttpServer_shared: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HttpServer_shared
+.PHONY : HttpServer_shared
 
 # fast build rule for target.
-testServer/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testServer.dir/build.make tests/CMakeFiles/testServer.dir/build
-.PHONY : testServer/fast
+HttpServer_shared/fast:
+	$(MAKE) $(MAKESILENT) -f HttpServer/src/CMakeFiles/HttpServer_shared.dir/build.make HttpServer/src/CMakeFiles/HttpServer_shared.dir/build
+.PHONY : HttpServer_shared/fast
 
 # Help Target
 help:
@@ -176,10 +176,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... FDChatServer"
+	@echo "... FaultDiagnosisServer_shared"
 	@echo "... HttpServer_shared"
 	@echo "... neo4jDriver_static"
-	@echo "... testClient"
-	@echo "... testServer"
 .PHONY : help
 
 

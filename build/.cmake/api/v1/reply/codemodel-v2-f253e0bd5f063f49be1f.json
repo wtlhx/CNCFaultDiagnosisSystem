@@ -1,0 +1,148 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "FaultDiagnosisServer/src",
+					"jsonFile" : "directory-FaultDiagnosisServer.src-58676b82bdf8922a10d6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "FaultDiagnosisServer/src",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "FaultDiagnosisServer/main",
+					"jsonFile" : "directory-FaultDiagnosisServer.main-2aeea315f1e134977544.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "FaultDiagnosisServer/main",
+					"targetIndexes" : 
+					[
+						0,
+						3
+					]
+				},
+				{
+					"build" : "HttpServer/src",
+					"jsonFile" : "directory-HttpServer.src-26aea261aa0c05f57cf7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "HttpServer/src",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "HttpServer",
+					"jsonFile" : "directory-HttpServer-6b98149f25617ed71aae.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "HttpServer"
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"name" : "FaultDiagnosisServer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "FDChatServer::@72128766f3b59736a3e5",
+					"jsonFile" : "target-FDChatServer-5f2c9881dc22d7e5619b.json",
+					"name" : "FDChatServer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "FaultDiagnosisServer_shared::@ccc4016c631c4b0c19e8",
+					"jsonFile" : "target-FaultDiagnosisServer_shared-230a9ac809d51f43b884.json",
+					"name" : "FaultDiagnosisServer_shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "HttpServer_shared::@3043b04d9856962b089f",
+					"jsonFile" : "target-HttpServer_shared-c5b41a23745786060a16.json",
+					"name" : "HttpServer_shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "neo4jDriver_static::@72128766f3b59736a3e5",
+					"jsonFile" : "target-neo4jDriver_static-3ec6dc2f774e407b5a2d.json",
+					"name" : "neo4jDriver_static",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/luohuaxu/\u6545\u969c\u8bca\u65ad\u7cfb\u7edf/CNCFaultDiagnosisSystem/build",
+		"source" : "/home/luohuaxu/\u6545\u969c\u8bca\u65ad\u7cfb\u7edf/CNCFaultDiagnosisSystem"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
