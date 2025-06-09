@@ -202,4 +202,7 @@ HttpServer/src/CMakeFiles/HttpServer_shared.dir/router/Router.cpp.o: \
  /usr/local/include/boost/config/detail/cxx_composite.hpp \
  /usr/local/include/boost/detail/workaround.hpp \
  /usr/local/include/boost/config/workaround.hpp \
- /usr/local/include/boost/core/addressof.hpp
+ /usr/local/include/boost/core/addressof.hpp \
+ /usr/include/muduo/base/Logging.h /usr/include/muduo/base/LogStream.h \
+ /usr/include/muduo/base/noncopyable.h \
+ /usr/include/muduo/base/StringPiece.h

@@ -1,5 +1,5 @@
 #include "Router.h"
-
+#include <muduo/base/Logging.h>
 Router::Router()
 {
 }
@@ -30,9 +30,11 @@ bool Router::route(const HttpRequest& request, HttpResponse* response) // 传递
         handler->handle(request, response);
         return true;
     }
+    LOG_INFO << "router requestbody:" << request.getContentBody();
     //查找回调函数
     if(handlerCallbacks.find(key) != handlerCallbacks.end())
     {
+        LOG_INFO << "router requestbody:" << request.getContentBody();
         auto handler = handlerCallbacks[key];
         handler(request, response);
         return true;

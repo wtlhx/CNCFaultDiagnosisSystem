@@ -83,10 +83,24 @@ FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/FaultDiagnos
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FaultDiagnosisServer_shared.dir/FaultDiagnosisServer.cpp.s"
 	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/FaultDiagnosisServer/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/FaultDiagnosisServer/src/FaultDiagnosisServer.cpp -o CMakeFiles/FaultDiagnosisServer_shared.dir/FaultDiagnosisServer.cpp.s
 
+FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/CURLUtil.cpp.o: FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/flags.make
+FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/CURLUtil.cpp.o: ../FaultDiagnosisServer/src/chat/CURLUtil.cpp
+FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/CURLUtil.cpp.o: FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/CURLUtil.cpp.o"
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/FaultDiagnosisServer/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/CURLUtil.cpp.o -MF CMakeFiles/FaultDiagnosisServer_shared.dir/chat/CURLUtil.cpp.o.d -o CMakeFiles/FaultDiagnosisServer_shared.dir/chat/CURLUtil.cpp.o -c /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/FaultDiagnosisServer/src/chat/CURLUtil.cpp
+
+FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/CURLUtil.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FaultDiagnosisServer_shared.dir/chat/CURLUtil.cpp.i"
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/FaultDiagnosisServer/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/FaultDiagnosisServer/src/chat/CURLUtil.cpp > CMakeFiles/FaultDiagnosisServer_shared.dir/chat/CURLUtil.cpp.i
+
+FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/CURLUtil.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FaultDiagnosisServer_shared.dir/chat/CURLUtil.cpp.s"
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/FaultDiagnosisServer/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/FaultDiagnosisServer/src/chat/CURLUtil.cpp -o CMakeFiles/FaultDiagnosisServer_shared.dir/chat/CURLUtil.cpp.s
+
 FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/ChatHandler.cpp.o: FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/flags.make
 FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/ChatHandler.cpp.o: ../FaultDiagnosisServer/src/chat/ChatHandler.cpp
 FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/ChatHandler.cpp.o: FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/ChatHandler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/ChatHandler.cpp.o"
 	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/FaultDiagnosisServer/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/ChatHandler.cpp.o -MF CMakeFiles/FaultDiagnosisServer_shared.dir/chat/ChatHandler.cpp.o.d -o CMakeFiles/FaultDiagnosisServer_shared.dir/chat/ChatHandler.cpp.o -c /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/FaultDiagnosisServer/src/chat/ChatHandler.cpp
 
 FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/ChatHandler.cpp.i: cmake_force
@@ -100,7 +114,7 @@ FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/ChatHan
 FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/IntentRecognizer.cpp.o: FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/flags.make
 FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/IntentRecognizer.cpp.o: ../FaultDiagnosisServer/src/chat/IntentRecognizer.cpp
 FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/IntentRecognizer.cpp.o: FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/IntentRecognizer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/IntentRecognizer.cpp.o"
 	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/FaultDiagnosisServer/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/IntentRecognizer.cpp.o -MF CMakeFiles/FaultDiagnosisServer_shared.dir/chat/IntentRecognizer.cpp.o.d -o CMakeFiles/FaultDiagnosisServer_shared.dir/chat/IntentRecognizer.cpp.o -c /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/FaultDiagnosisServer/src/chat/IntentRecognizer.cpp
 
 FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/IntentRecognizer.cpp.i: cmake_force
@@ -111,21 +125,39 @@ FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/IntentR
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FaultDiagnosisServer_shared.dir/chat/IntentRecognizer.cpp.s"
 	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/FaultDiagnosisServer/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/FaultDiagnosisServer/src/chat/IntentRecognizer.cpp -o CMakeFiles/FaultDiagnosisServer_shared.dir/chat/IntentRecognizer.cpp.s
 
+FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/LLMInteractor.cpp.o: FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/flags.make
+FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/LLMInteractor.cpp.o: ../FaultDiagnosisServer/src/chat/LLMInteractor.cpp
+FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/LLMInteractor.cpp.o: FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/LLMInteractor.cpp.o"
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/FaultDiagnosisServer/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/LLMInteractor.cpp.o -MF CMakeFiles/FaultDiagnosisServer_shared.dir/chat/LLMInteractor.cpp.o.d -o CMakeFiles/FaultDiagnosisServer_shared.dir/chat/LLMInteractor.cpp.o -c /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/FaultDiagnosisServer/src/chat/LLMInteractor.cpp
+
+FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/LLMInteractor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FaultDiagnosisServer_shared.dir/chat/LLMInteractor.cpp.i"
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/FaultDiagnosisServer/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/FaultDiagnosisServer/src/chat/LLMInteractor.cpp > CMakeFiles/FaultDiagnosisServer_shared.dir/chat/LLMInteractor.cpp.i
+
+FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/LLMInteractor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FaultDiagnosisServer_shared.dir/chat/LLMInteractor.cpp.s"
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/FaultDiagnosisServer/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/FaultDiagnosisServer/src/chat/LLMInteractor.cpp -o CMakeFiles/FaultDiagnosisServer_shared.dir/chat/LLMInteractor.cpp.s
+
 # Object files for target FaultDiagnosisServer_shared
 FaultDiagnosisServer_shared_OBJECTS = \
 "CMakeFiles/FaultDiagnosisServer_shared.dir/FaultDiagnosisServer.cpp.o" \
+"CMakeFiles/FaultDiagnosisServer_shared.dir/chat/CURLUtil.cpp.o" \
 "CMakeFiles/FaultDiagnosisServer_shared.dir/chat/ChatHandler.cpp.o" \
-"CMakeFiles/FaultDiagnosisServer_shared.dir/chat/IntentRecognizer.cpp.o"
+"CMakeFiles/FaultDiagnosisServer_shared.dir/chat/IntentRecognizer.cpp.o" \
+"CMakeFiles/FaultDiagnosisServer_shared.dir/chat/LLMInteractor.cpp.o"
 
 # External object files for target FaultDiagnosisServer_shared
 FaultDiagnosisServer_shared_EXTERNAL_OBJECTS =
 
 FaultDiagnosisServer/src/libFaultDiagnosisServer_shared.so: FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/FaultDiagnosisServer.cpp.o
+FaultDiagnosisServer/src/libFaultDiagnosisServer_shared.so: FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/CURLUtil.cpp.o
 FaultDiagnosisServer/src/libFaultDiagnosisServer_shared.so: FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/ChatHandler.cpp.o
 FaultDiagnosisServer/src/libFaultDiagnosisServer_shared.so: FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/IntentRecognizer.cpp.o
+FaultDiagnosisServer/src/libFaultDiagnosisServer_shared.so: FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/LLMInteractor.cpp.o
 FaultDiagnosisServer/src/libFaultDiagnosisServer_shared.so: FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/build.make
 FaultDiagnosisServer/src/libFaultDiagnosisServer_shared.so: FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libFaultDiagnosisServer_shared.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libFaultDiagnosisServer_shared.so"
 	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build/FaultDiagnosisServer/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FaultDiagnosisServer_shared.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

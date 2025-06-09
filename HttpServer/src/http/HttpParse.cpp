@@ -39,11 +39,11 @@ bool HttpParse::parse(muduo::net::Buffer* buf, muduo::Timestamp receiveTime)
         }
         else if(status == HttpParseStatus::ParseResquestHeaders)
         {
-            std::cout << "Parse header" << std::endl;
+            // std::cout << "Parse header" << std::endl;
             const char* crlf = buf->findCRLF();
             if(crlf)
             {
-                std::cout << "header.." << std::endl;
+                // std::cout << "header.." << std::endl;
                 const char* colon = std::find(buf->peek(), crlf, ':'); //找冒号的位置
                 if(colon < crlf)
                 {
@@ -57,7 +57,9 @@ bool HttpParse::parse(muduo::net::Buffer* buf, muduo::Timestamp receiveTime)
                             std::string contentLength = request.getHeaders("Content-Length");
                             if(contentLength != "")
                             {
-                                uint64_t length = request.getContentLength();
+                                uint64_t length = std::stoull(contentLength);
+                                request.setContentLength(length); //设置请求体长度
+                                std::cout << "Content-Length: " << request.getContentLength() << std::endl;
                                 if(length > 0)
                                 {
                                     status = HttpParseStatus::ParseResquestBody;
@@ -95,6 +97,7 @@ bool HttpParse::parse(muduo::net::Buffer* buf, muduo::Timestamp receiveTime)
         }
         else if(status == HttpParseStatus::ParseResquestBody)
         {
+            std::cout << "Parse body" << std::endl;
             //检查缓冲区是否有足够的内容，缓冲区中的内容就是收到的请求报文的请求体
             if(buf->readableBytes() < request.getContentLength())
             {

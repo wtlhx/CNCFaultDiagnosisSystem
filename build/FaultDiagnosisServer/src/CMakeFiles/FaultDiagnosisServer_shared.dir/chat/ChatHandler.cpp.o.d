@@ -182,6 +182,7 @@ FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/ChatHan
  /usr/local/include/boost/config/workaround.hpp \
  /usr/local/include/boost/core/addressof.hpp \
  /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/FaultDiagnosisServer/include/chat/IntentRecognizer.h \
+ /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/FaultDiagnosisServer/include/chat/CURLUtil.h \
  /usr/include/x86_64-linux-gnu/curl/curl.h \
  /usr/include/x86_64-linux-gnu/curl/curlver.h \
  /usr/include/x86_64-linux-gnu/curl/system.h \
@@ -265,4 +266,70 @@ FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/ChatHan
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
- /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h
+ /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
+ /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/include/Database/MySQLUtil.h \
+ /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/include/Database/MySQLConnectionPool.h \
+ /usr/include/c++/11/queue /usr/include/c++/11/bits/stl_queue.h \
+ /usr/include/c++/11/mutex /usr/include/c++/11/chrono \
+ /usr/include/c++/11/ratio /usr/include/c++/11/limits \
+ /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
+ /usr/include/c++/11/bits/std_mutex.h \
+ /usr/include/c++/11/bits/unique_lock.h /usr/include/c++/11/thread \
+ /usr/include/c++/11/bits/std_thread.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h \
+ /usr/include/c++/11/condition_variable \
+ /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/include/Database/MySQLConnection.h \
+ /usr/include/mysql_connection.h /usr/include/cppconn/connection.h \
+ /usr/include/cppconn/build_config.h /usr/include/cppconn/warning.h \
+ /usr/include/cppconn/sqlstring.h /usr/include/c++/11/iostream \
+ /usr/include/cppconn/variant.h /usr/include/c++/11/list \
+ /usr/include/c++/11/bits/stl_list.h /usr/include/c++/11/bits/list.tcc \
+ /usr/include/cppconn/exception.h /usr/local/include/boost/shared_ptr.hpp \
+ /usr/local/include/boost/smart_ptr/shared_ptr.hpp \
+ /usr/local/include/boost/smart_ptr/detail/shared_count.hpp \
+ /usr/local/include/boost/smart_ptr/bad_weak_ptr.hpp \
+ /usr/local/include/boost/smart_ptr/detail/sp_counted_base.hpp \
+ /usr/local/include/boost/smart_ptr/detail/sp_has_gcc_intrinsics.hpp \
+ /usr/local/include/boost/smart_ptr/detail/sp_has_sync_intrinsics.hpp \
+ /usr/local/include/boost/smart_ptr/detail/deprecated_macros.hpp \
+ /usr/local/include/boost/config/pragma_message.hpp \
+ /usr/local/include/boost/smart_ptr/detail/sp_counted_base_gcc_atomic.hpp \
+ /usr/local/include/boost/smart_ptr/detail/sp_typeinfo_.hpp \
+ /usr/local/include/boost/cstdint.hpp \
+ /usr/local/include/boost/smart_ptr/detail/sp_counted_impl.hpp \
+ /usr/local/include/boost/core/checked_delete.hpp \
+ /usr/local/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp \
+ /usr/local/include/boost/throw_exception.hpp \
+ /usr/local/include/boost/exception/exception.hpp \
+ /usr/local/include/boost/assert/source_location.hpp \
+ /usr/local/include/boost/smart_ptr/detail/sp_convertible.hpp \
+ /usr/local/include/boost/smart_ptr/detail/sp_noexcept.hpp \
+ /usr/local/include/boost/assert.hpp \
+ /usr/local/include/boost/smart_ptr/detail/spinlock_pool.hpp \
+ /usr/local/include/boost/smart_ptr/detail/spinlock.hpp \
+ /usr/local/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp \
+ /usr/local/include/boost/smart_ptr/detail/yield_k.hpp \
+ /usr/local/include/boost/core/yield_primitives.hpp \
+ /usr/local/include/boost/core/detail/sp_thread_pause.hpp \
+ /usr/local/include/boost/core/detail/sp_thread_yield.hpp \
+ /usr/local/include/boost/core/detail/sp_thread_sleep.hpp \
+ /usr/local/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
+ /usr/local/include/boost/smart_ptr/detail/local_counted_base.hpp \
+ /usr/local/include/boost/scoped_ptr.hpp \
+ /usr/local/include/boost/smart_ptr/scoped_ptr.hpp \
+ /usr/include/mysql_driver.h /usr/include/cppconn/driver.h \
+ /usr/include/cppconn/connection.h \
+ /usr/include/cppconn/prepared_statement.h \
+ /usr/include/cppconn/statement.h /usr/include/cppconn/config.h \
+ /usr/include/inttypes.h /usr/include/cppconn/resultset.h \
+ /usr/include/cppconn/resultset_metadata.h \
+ /usr/include/cppconn/datatype.h /usr/include/cppconn/resultset.h \
+ /usr/include/jsoncpp/json/json.h \
+ /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/HttpServer/include/Database/Neo4jUtil.h \
+ /usr/include/Neo4j-cpp-driver-master/api.hpp \
+ /usr/include/x86_64-linux-gnu/curl/curl.h \
+ /usr/include/jsoncpp/json/json.h \
+ /usr/include/Neo4j-cpp-driver-master/database.hpp \
+ /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/FaultDiagnosisServer/include/chat/LLMInteractor.h \
+ /usr/include/c++/11/future /usr/include/c++/11/atomic \
+ /usr/include/c++/11/bits/atomic_futex.h

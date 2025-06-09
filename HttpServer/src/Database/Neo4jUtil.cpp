@@ -1,4 +1,5 @@
 #include "Neo4jUtil.h"
+#include <iostream>
 
 Neo4jUtil::Neo4jUtil(
             std::shared_ptr<neo4jDriver::Neo4j> database, 
@@ -55,6 +56,7 @@ Json::Value Neo4jUtil::queryReasonAndSolution(std::string linkedLabel, Json::Val
         Json::Value reason;
         Json::Value nullvalue; // 用于表示空值
         // 查询reason节点，使用linkedLabel和linkedProperties作为查询条件
+        std::cout << "Query reasion ..." << std::endl;
         reason = neo4jAPI.selectNodesByAnotherLinkedNode("reason", nullvalue, linkedLabel + "2reason", nullvalue, linkedLabel, linkedProperties);
         Json::Value resultList;
         for(int i = 0; i < reason.size(); i++)
@@ -62,6 +64,7 @@ Json::Value Neo4jUtil::queryReasonAndSolution(std::string linkedLabel, Json::Val
             Json::Value result; // 用于存储每个reason和对应的solution
             //接收solution的查询结果
             Json::Value solution;
+            std::cout << "Query solution ..." << std::endl;
             solution = neo4jAPI.selectNodesByAnotherLinkedNode("solution", nullvalue, "reason2solution", nullvalue, reason[i]["_id"].asLargestUInt());
             //将reason和solution合并到一个Json对象中
             result["reason"] = reason;

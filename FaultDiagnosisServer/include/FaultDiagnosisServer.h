@@ -1,6 +1,7 @@
 #pragma once
 
 #include "HttpServer.h"
+#include "MySQLUtil.h"
 
 class FaultDiagnosisServer
 {

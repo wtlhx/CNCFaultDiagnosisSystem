@@ -96,6 +96,7 @@ void HttpServer::onResponse(const muduo::net::TcpConnectionPtr &connection, Http
 
 void HttpServer::handleRequest(const HttpRequest& request, HttpResponse* response)
 {
+    LOG_INFO << "Received request: " << request.getMethodString() << " " << request.getUrl();
     try
     {
         if(!router.route(request, response))

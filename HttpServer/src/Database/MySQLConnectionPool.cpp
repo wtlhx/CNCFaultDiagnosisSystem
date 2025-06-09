@@ -21,6 +21,11 @@ MySQLConnectionPool::MySQLConnectionPool()
 
 MySQLConnectionPool::~MySQLConnectionPool()
 {
+    std::lock_guard<std::mutex> lock(mtx);
+    while(!mySQLconnectionPool.empty())
+    {
+        mySQLconnectionPool.pop(); // 清空连接池
+    }
 }
 
 void MySQLConnectionPool::createConnetion()
@@ -177,5 +182,5 @@ void MySQLConnectionPool::parseConfig()
     schema = root["schema"].asString();
     minSize = root["minSize"].asUInt();
     maxSize = root["maxSize"].asUInt();
-    maxTime = root["maxTime"].asUInt(); 
+    maxTime = root["maxTime"].asUInt();
 }

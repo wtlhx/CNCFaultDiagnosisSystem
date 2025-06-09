@@ -2,6 +2,7 @@ FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/IntentR
  /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/FaultDiagnosisServer/src/chat/IntentRecognizer.cpp \
  /usr/include/stdc-predef.h \
  /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/FaultDiagnosisServer/include/chat/IntentRecognizer.h \
+ /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/FaultDiagnosisServer/include/chat/CURLUtil.h \
  /usr/include/x86_64-linux-gnu/curl/curl.h \
  /usr/include/x86_64-linux-gnu/curl/curlver.h \
  /usr/include/x86_64-linux-gnu/curl/system.h \

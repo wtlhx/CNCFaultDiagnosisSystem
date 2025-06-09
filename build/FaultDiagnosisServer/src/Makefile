@@ -154,6 +154,30 @@ FaultDiagnosisServer.cpp.s:
 	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build && $(MAKE) $(MAKESILENT) -f FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/build.make FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/FaultDiagnosisServer.cpp.s
 .PHONY : FaultDiagnosisServer.cpp.s
 
+chat/CURLUtil.o: chat/CURLUtil.cpp.o
+.PHONY : chat/CURLUtil.o
+
+# target to build an object file
+chat/CURLUtil.cpp.o:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build && $(MAKE) $(MAKESILENT) -f FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/build.make FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/CURLUtil.cpp.o
+.PHONY : chat/CURLUtil.cpp.o
+
+chat/CURLUtil.i: chat/CURLUtil.cpp.i
+.PHONY : chat/CURLUtil.i
+
+# target to preprocess a source file
+chat/CURLUtil.cpp.i:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build && $(MAKE) $(MAKESILENT) -f FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/build.make FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/CURLUtil.cpp.i
+.PHONY : chat/CURLUtil.cpp.i
+
+chat/CURLUtil.s: chat/CURLUtil.cpp.s
+.PHONY : chat/CURLUtil.s
+
+# target to generate assembly for a file
+chat/CURLUtil.cpp.s:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build && $(MAKE) $(MAKESILENT) -f FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/build.make FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/CURLUtil.cpp.s
+.PHONY : chat/CURLUtil.cpp.s
+
 chat/ChatHandler.o: chat/ChatHandler.cpp.o
 .PHONY : chat/ChatHandler.o
 
@@ -202,6 +226,30 @@ chat/IntentRecognizer.cpp.s:
 	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build && $(MAKE) $(MAKESILENT) -f FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/build.make FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/IntentRecognizer.cpp.s
 .PHONY : chat/IntentRecognizer.cpp.s
 
+chat/LLMInteractor.o: chat/LLMInteractor.cpp.o
+.PHONY : chat/LLMInteractor.o
+
+# target to build an object file
+chat/LLMInteractor.cpp.o:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build && $(MAKE) $(MAKESILENT) -f FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/build.make FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/LLMInteractor.cpp.o
+.PHONY : chat/LLMInteractor.cpp.o
+
+chat/LLMInteractor.i: chat/LLMInteractor.cpp.i
+.PHONY : chat/LLMInteractor.i
+
+# target to preprocess a source file
+chat/LLMInteractor.cpp.i:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build && $(MAKE) $(MAKESILENT) -f FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/build.make FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/LLMInteractor.cpp.i
+.PHONY : chat/LLMInteractor.cpp.i
+
+chat/LLMInteractor.s: chat/LLMInteractor.cpp.s
+.PHONY : chat/LLMInteractor.s
+
+# target to generate assembly for a file
+chat/LLMInteractor.cpp.s:
+	cd /home/luohuaxu/故障诊断系统/CNCFaultDiagnosisSystem/build && $(MAKE) $(MAKESILENT) -f FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/build.make FaultDiagnosisServer/src/CMakeFiles/FaultDiagnosisServer_shared.dir/chat/LLMInteractor.cpp.s
+.PHONY : chat/LLMInteractor.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -214,12 +262,18 @@ help:
 	@echo "... FaultDiagnosisServer.o"
 	@echo "... FaultDiagnosisServer.i"
 	@echo "... FaultDiagnosisServer.s"
+	@echo "... chat/CURLUtil.o"
+	@echo "... chat/CURLUtil.i"
+	@echo "... chat/CURLUtil.s"
 	@echo "... chat/ChatHandler.o"
 	@echo "... chat/ChatHandler.i"
 	@echo "... chat/ChatHandler.s"
 	@echo "... chat/IntentRecognizer.o"
 	@echo "... chat/IntentRecognizer.i"
 	@echo "... chat/IntentRecognizer.s"
+	@echo "... chat/LLMInteractor.o"
+	@echo "... chat/LLMInteractor.i"
+	@echo "... chat/LLMInteractor.s"
 .PHONY : help
 
 

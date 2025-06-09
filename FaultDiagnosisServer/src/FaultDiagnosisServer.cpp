@@ -18,6 +18,7 @@ void FaultDiagnosisServer::start()
 
 void FaultDiagnosisServer::initialize()
 {
+    // MySQLUtil::init(); // 初始化MySQL连接池
     initializeRouters(); // 初始化路由器，注册路由
 }
 

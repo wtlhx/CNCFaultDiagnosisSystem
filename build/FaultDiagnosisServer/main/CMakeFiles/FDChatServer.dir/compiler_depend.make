@@ -301,8 +301,230 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
   /usr/include/c++/11/bits/stl_multimap.h \
   ../HttpServer/include/http/HttpRequest.h \
   ../HttpServer/include/router/Router.h \
-  ../HttpServer/include/router/RouterHandler.h
+  ../HttpServer/include/router/RouterHandler.h \
+  ../HttpServer/include/Database/MySQLUtil.h \
+  ../HttpServer/include/Database/MySQLConnectionPool.h \
+  /usr/include/c++/11/queue \
+  /usr/include/c++/11/deque \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
+  /usr/include/c++/11/bits/stl_queue.h \
+  /usr/include/c++/11/mutex \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/limits \
+  /usr/include/c++/11/ctime \
+  /usr/include/c++/11/bits/parse_numbers.h \
+  /usr/include/c++/11/bits/std_mutex.h \
+  /usr/include/c++/11/bits/unique_lock.h \
+  /usr/include/c++/11/thread \
+  /usr/include/c++/11/bits/std_thread.h \
+  /usr/include/c++/11/bits/this_thread_sleep.h \
+  /usr/include/c++/11/condition_variable \
+  ../HttpServer/include/Database/MySQLConnection.h \
+  /usr/include/mysql_connection.h \
+  /usr/include/cppconn/connection.h \
+  /usr/include/cppconn/build_config.h \
+  /usr/include/cppconn/warning.h \
+  /usr/include/cppconn/sqlstring.h \
+  /usr/include/c++/11/iostream \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/bits/basic_ios.h \
+  /usr/include/c++/11/bits/locale_facets.h \
+  /usr/include/c++/11/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+  /usr/include/c++/11/bits/locale_facets.tcc \
+  /usr/include/c++/11/bits/basic_ios.tcc \
+  /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/cppconn/variant.h \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/list.tcc \
+  /usr/include/cppconn/exception.h \
+  /usr/local/include/boost/shared_ptr.hpp \
+  /usr/local/include/boost/smart_ptr/shared_ptr.hpp \
+  /usr/local/include/boost/smart_ptr/detail/shared_count.hpp \
+  /usr/local/include/boost/smart_ptr/bad_weak_ptr.hpp \
+  /usr/local/include/boost/smart_ptr/detail/sp_counted_base.hpp \
+  /usr/local/include/boost/smart_ptr/detail/sp_has_gcc_intrinsics.hpp \
+  /usr/local/include/boost/smart_ptr/detail/sp_has_sync_intrinsics.hpp \
+  /usr/local/include/boost/smart_ptr/detail/deprecated_macros.hpp \
+  /usr/local/include/boost/config/pragma_message.hpp \
+  /usr/local/include/boost/smart_ptr/detail/sp_counted_base_gcc_atomic.hpp \
+  /usr/local/include/boost/smart_ptr/detail/sp_typeinfo_.hpp \
+  /usr/local/include/boost/smart_ptr/detail/sp_counted_impl.hpp \
+  /usr/local/include/boost/core/checked_delete.hpp \
+  /usr/local/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp \
+  /usr/local/include/boost/smart_ptr/detail/sp_convertible.hpp \
+  /usr/local/include/boost/smart_ptr/detail/sp_noexcept.hpp \
+  /usr/local/include/boost/assert.hpp \
+  /usr/local/include/boost/smart_ptr/detail/spinlock_pool.hpp \
+  /usr/local/include/boost/smart_ptr/detail/spinlock.hpp \
+  /usr/local/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp \
+  /usr/local/include/boost/smart_ptr/detail/yield_k.hpp \
+  /usr/local/include/boost/core/yield_primitives.hpp \
+  /usr/local/include/boost/core/detail/sp_thread_pause.hpp \
+  /usr/local/include/boost/core/detail/sp_thread_yield.hpp \
+  /usr/local/include/boost/core/detail/sp_thread_sleep.hpp \
+  /usr/local/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
+  /usr/local/include/boost/smart_ptr/detail/local_counted_base.hpp \
+  /usr/local/include/boost/scoped_ptr.hpp \
+  /usr/local/include/boost/smart_ptr/scoped_ptr.hpp \
+  /usr/include/mysql_driver.h \
+  /usr/include/cppconn/driver.h \
+  /usr/include/cppconn/connection.h \
+  /usr/include/cppconn/prepared_statement.h \
+  /usr/include/cppconn/statement.h \
+  /usr/include/cppconn/config.h \
+  /usr/include/inttypes.h \
+  /usr/include/cppconn/resultset.h \
+  /usr/include/cppconn/resultset_metadata.h \
+  /usr/include/cppconn/datatype.h \
+  /usr/include/cppconn/resultset.h \
+  /usr/include/muduo/base/Logging.h \
+  /usr/include/muduo/base/LogStream.h \
+  /usr/include/jsoncpp/json/json.h \
+  /usr/include/jsoncpp/json/config.h \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/bits/sstream.tcc \
+  /usr/include/jsoncpp/json/allocator.h \
+  /usr/include/jsoncpp/json/version.h \
+  /usr/include/jsoncpp/json/json_features.h \
+  /usr/include/jsoncpp/json/forwards.h \
+  /usr/include/jsoncpp/json/reader.h \
+  /usr/include/jsoncpp/json/value.h \
+  /usr/include/c++/11/stack \
+  /usr/include/c++/11/bits/stl_stack.h \
+  /usr/include/jsoncpp/json/writer.h
 
+
+/usr/include/jsoncpp/json/writer.h:
+
+/usr/include/c++/11/bits/stl_stack.h:
+
+/usr/include/c++/11/stack:
+
+/usr/include/jsoncpp/json/reader.h:
+
+/usr/include/jsoncpp/json/forwards.h:
+
+/usr/include/jsoncpp/json/version.h:
+
+/usr/include/jsoncpp/json/allocator.h:
+
+/usr/include/jsoncpp/json/config.h:
+
+/usr/include/jsoncpp/json/json.h:
+
+/usr/include/muduo/base/LogStream.h:
+
+/usr/include/cppconn/resultset_metadata.h:
+
+/usr/include/cppconn/resultset.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/cppconn/statement.h:
+
+/usr/include/cppconn/driver.h:
+
+/usr/local/include/boost/scoped_ptr.hpp:
+
+/usr/local/include/boost/core/detail/sp_thread_yield.hpp:
+
+/usr/local/include/boost/core/detail/sp_thread_pause.hpp:
+
+/usr/local/include/boost/core/yield_primitives.hpp:
+
+/usr/local/include/boost/smart_ptr/detail/yield_k.hpp:
+
+/usr/local/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:
+
+/usr/local/include/boost/smart_ptr/detail/spinlock_pool.hpp:
+
+/usr/local/include/boost/assert.hpp:
+
+/usr/local/include/boost/smart_ptr/detail/sp_noexcept.hpp:
+
+/usr/local/include/boost/smart_ptr/detail/sp_convertible.hpp:
+
+/usr/local/include/boost/core/checked_delete.hpp:
+
+/usr/local/include/boost/smart_ptr/detail/sp_counted_base_gcc_atomic.hpp:
+
+/usr/include/cppconn/config.h:
+
+/usr/local/include/boost/smart_ptr/detail/deprecated_macros.hpp:
+
+/usr/local/include/boost/smart_ptr/detail/sp_has_sync_intrinsics.hpp:
+
+/usr/local/include/boost/smart_ptr/detail/sp_has_gcc_intrinsics.hpp:
+
+/usr/local/include/boost/smart_ptr/detail/sp_counted_base.hpp:
+
+/usr/local/include/boost/smart_ptr/shared_ptr.hpp:
+
+/usr/local/include/boost/shared_ptr.hpp:
+
+/usr/include/cppconn/exception.h:
+
+/usr/include/c++/11/bits/stl_list.h:
+
+/usr/include/muduo/base/Logging.h:
+
+/usr/include/c++/11/list:
+
+/usr/include/jsoncpp/json/json_features.h:
+
+/usr/include/cppconn/variant.h:
+
+/usr/include/c++/11/bits/istream.tcc:
+
+/usr/include/c++/11/istream:
+
+/usr/include/c++/11/bits/ostream.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
+
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/usr/include/c++/11/cwctype:
+
+/usr/include/c++/11/ostream:
+
+/usr/include/cppconn/build_config.h:
+
+/usr/local/include/boost/smart_ptr/detail/sp_typeinfo_.hpp:
+
+/usr/include/cppconn/connection.h:
+
+../HttpServer/include/Database/MySQLConnection.h:
+
+/usr/include/c++/11/bits/parse_numbers.h:
+
+/usr/local/include/boost/smart_ptr/bad_weak_ptr.hpp:
+
+/usr/include/c++/11/ctime:
+
+/usr/include/c++/11/limits:
+
+/usr/include/c++/11/mutex:
+
+/usr/include/mysql_connection.h:
+
+/usr/include/c++/11/bits/deque.tcc:
+
+/usr/include/c++/11/deque:
+
+../HttpServer/include/Database/MySQLConnectionPool.h:
 
 ../HttpServer/include/router/RouterHandler.h:
 
@@ -330,7 +552,11 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 
 /usr/include/x86_64-linux-gnu/bits/socket.h:
 
+/usr/local/include/boost/smart_ptr/detail/shared_count.hpp:
+
 /usr/include/netinet/in.h:
+
+/usr/local/include/boost/smart_ptr/detail/spinlock.hpp:
 
 /usr/include/c++/11/algorithm:
 
@@ -339,6 +565,12 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 /usr/include/muduo/net/TcpConnection.h:
 
 /usr/include/muduo/base/Atomic.h:
+
+/usr/include/c++/11/condition_variable:
+
+/usr/include/c++/11/thread:
+
+/usr/include/c++/11/ratio:
 
 /usr/include/muduo/net/TcpServer.h:
 
@@ -370,6 +602,8 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 
+/usr/local/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp:
+
 /usr/include/c++/11/bit:
 
 /usr/include/assert.h:
@@ -392,13 +626,21 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
+/usr/include/wctype.h:
+
 /usr/include/sched.h:
+
+/usr/include/jsoncpp/json/value.h:
+
+/usr/local/include/boost/config/pragma_message.hpp:
 
 /usr/include/muduo/net/Endian.h:
 
 /usr/local/include/boost/type_index.hpp:
 
 /usr/include/pthread.h:
+
+/usr/local/include/boost/smart_ptr/scoped_ptr.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
@@ -417,6 +659,8 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/c++/11/bits/stl_deque.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
@@ -437,6 +681,8 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 /usr/include/c++/11/cctype:
 
 /usr/include/c++/11/unordered_map:
+
+/usr/include/cppconn/datatype.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
@@ -478,7 +724,11 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 
 /usr/include/c++/11/iosfwd:
 
+../HttpServer/include/Database/MySQLUtil.h:
+
 /usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/usr/include/cppconn/warning.h:
 
 /usr/include/c++/11/ext/type_traits.h:
 
@@ -505,6 +755,10 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 /usr/include/c++/11/bits/atomic_base.h:
 
 /usr/include/features.h:
+
+/usr/include/c++/11/bits/locale_facets.tcc:
+
+/usr/include/c++/11/bits/this_thread_sleep.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
@@ -540,9 +794,13 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
+/usr/include/c++/11/bits/locale_facets.h:
+
 /usr/include/c++/11/bits/exception.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/c++/11/iostream:
 
 /usr/include/c++/11/bits/node_handle.h:
 
@@ -554,7 +812,11 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 
 ../FaultDiagnosisServer/include/FaultDiagnosisServer.h:
 
+/usr/include/c++/11/bits/std_mutex.h:
+
 ../HttpServer/include/http/HttpServer.h:
+
+/usr/include/c++/11/chrono:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
@@ -608,6 +870,8 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
+/usr/include/c++/11/bits/stl_queue.h:
+
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
@@ -621,6 +885,8 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 /usr/local/include/boost/config.hpp:
 
 /usr/include/c++/11/bits/stream_iterator.h:
+
+/usr/include/c++/11/bits/std_thread.h:
 
 /usr/include/c++/11/bits/cpp_type_traits.h:
 
@@ -648,6 +914,8 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 
 /usr/include/c++/11/bits/stl_iterator.h:
 
+/usr/include/c++/11/bits/sstream.tcc:
+
 /usr/include/c++/11/new:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
@@ -659,6 +927,8 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 /usr/include/c++/11/clocale:
 
 /usr/include/wchar.h:
+
+/usr/include/c++/11/bits/basic_ios.h:
 
 /usr/include/c++/11/bits/uniform_int_dist.h:
 
@@ -710,6 +980,10 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 
 /usr/include/errno.h:
 
+/usr/local/include/boost/core/detail/sp_thread_sleep.hpp:
+
+/usr/include/c++/11/ios:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
 
 /usr/include/c++/11/utility:
@@ -725,6 +999,8 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/local/include/boost/config/detail/select_stdlib_config.hpp:
+
+/usr/include/cppconn/prepared_statement.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
@@ -744,6 +1020,8 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 
 /usr/local/include/boost/config/detail/select_platform_config.hpp:
 
+/usr/include/c++/11/bits/unique_lock.h:
+
 /usr/include/c++/11/bits/uses_allocator.h:
 
 /usr/include/linux/stddef.h:
@@ -758,6 +1036,8 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 
 /usr/include/c++/11/bits/hashtable_policy.h:
 
+/usr/include/c++/11/bits/basic_ios.tcc:
+
 /usr/include/c++/11/bits/enable_special_members.h:
 
 /usr/include/stdint.h:
@@ -770,6 +1050,8 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 
 /usr/include/c++/11/vector:
 
+/usr/local/include/boost/smart_ptr/detail/sp_counted_impl.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/c++/11/bits/align.h:
@@ -778,9 +1060,13 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 
 /usr/include/c++/11/backward/auto_ptr.h:
 
+/usr/include/c++/11/sstream:
+
 /usr/include/muduo/net/InetAddress.h:
 
 /usr/local/include/boost/any/bad_any_cast.hpp:
+
+/usr/local/include/boost/smart_ptr/detail/local_sp_deleter.hpp:
 
 /usr/include/muduo/base/Mutex.h:
 
@@ -789,6 +1075,8 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/c++/11/bits/stl_bvector.h:
+
+/usr/include/c++/11/bits/list.tcc:
 
 /usr/local/include/boost/exception/exception.hpp:
 
@@ -811,6 +1099,8 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 /usr/local/include/boost/any.hpp:
 
 /usr/local/include/boost/config/user.hpp:
+
+/usr/include/mysql_driver.h:
 
 /usr/include/muduo/base/StringPiece.h:
 
@@ -852,6 +1142,8 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 
 /usr/include/c++/11/bits/nested_exception.h:
 
+/usr/local/include/boost/smart_ptr/detail/local_counted_base.hpp:
+
 /usr/local/include/boost/any/detail/placeholder.hpp:
 
 /usr/local/include/boost/type_index/type_index_facade.hpp:
@@ -865,6 +1157,8 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/c++/11/cstring:
+
+/usr/include/cppconn/sqlstring.h:
 
 /usr/include/c++/11/bits/streambuf.tcc:
 
@@ -891,6 +1185,8 @@ FaultDiagnosisServer/main/CMakeFiles/FDChatServer.dir/main.cpp.o: ../FaultDiagno
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/c++/11/iterator:
+
+/usr/include/c++/11/queue:
 
 /usr/include/c++/11/bits/shared_ptr_atomic.h:
 
